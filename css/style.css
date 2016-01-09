@@ -1,7 +1,33 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto|Poiret+One|Lobster|Limelight|Sansita+One|Roboto+Slab:300|Montez);
+@import url(https://fonts.googleapis.com/css?family=Vollkorn:400,700|Kanit:400,800);
 /* EXTRAS */
 .teamBrand {
-  font-family: 'Titilium Web', sans-serif;
+  font-family: 'Kanit', sans-serif;
   font-size: 1.2em;
-  text-shadow: 1px 1px 1px cyan;
-  color: blue;
+  text-shadow: 1px 1px 3px cyan;
+  color: #1a237e;
+  border: 2px solid cyan;
+  padding: 3px;
+  background-color: #cfd8dc;
+}
+
+/* MAIN STYLES */
+body {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f2f6f8+17,b5c6d0+38,a8b4bf+55,a8b4bf+57,b5c6d0+72,e0eff9+94 */
+  background: #f2f6f8; /* Old browsers */
+  background: -moz-linear-gradient(-45deg,  #f2f6f8 17%, #b5c6d0 38%, #a8b4bf 55%, #a8b4bf 57%, #b5c6d0 72%, #e0eff9 94%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg,  #f2f6f8 17%,#b5c6d0 38%,#a8b4bf 55%,#a8b4bf 57%,#b5c6d0 72%,#e0eff9 94%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg,  #f2f6f8 17%,#b5c6d0 38%,#a8b4bf 55%,#a8b4bf 57%,#b5c6d0 72%,#e0eff9 94%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', endColorstr='#e0eff9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background-repeat: no-repeat;
+  min-height: 960px;
+}
+/* HOME PAGE STYLES */
+.madbarHeading {
+  font-family: 'Kanit', sans-serif;
+  font-size: 4.8em;
+  color: #12237e;
+  font-weight: 900;
+  text-shadow: 1px 1px 6px cyan;
+  text-align: center;
 }
