@@ -8,7 +8,7 @@ myApp.run(['$rootScope','$location',
           function(event, next, previous, error) {
             if(error=='AUTH_REQUIRED') {
               $rootScope.message = 'Sorry, you must log in to access that page';
-              $location.path('/login');
+              $location.path('/control');
           }
       });
 }]);

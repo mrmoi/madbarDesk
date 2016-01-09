@@ -43,3 +43,8 @@
     <button type="submit" class="btn"
             ng-disabled="myform.$invalid">+</button>
     </form>
+
+    <h2>Your Players</h2>
+    <div class="meeting" ng-repeat="(key, player) in players">
+      <span class="text">{{ player.name }}</span>
+    </div>
