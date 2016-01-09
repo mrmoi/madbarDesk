@@ -66,7 +66,7 @@ myApp.config(['$routeProvider', function($routeProvider) {
       //}).
         when('/control', {
           templateUrl: 'partials/control.html',
-          //controller: 'MeetingsController',
+          controller: 'PlayersController',
           resolve: {
             currentAuth: function(Authentication) {
               return Authentication.requireAuth();
