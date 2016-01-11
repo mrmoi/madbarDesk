@@ -20,19 +20,52 @@ body {
   background: linear-gradient(135deg,  #f2f6f8 17%,#b5c6d0 38%,#a8b4bf 55%,#a8b4bf 57%,#b5c6d0 72%,#e0eff9 94%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', endColorstr='#e0eff9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
   background-repeat: no-repeat;
-  min-height: 960px;
-}
-.carousel {
-  margin: 0 auto;
-  width: 640px;
+  min-height: 600px;
 }
 
 /* HOME PAGE STYLES */
 .madbarHeading {
   font-family: 'Kanit', sans-serif;
-  font-size: 4.8em;
+  font-size: 5.8em;
   color: #12237e;
   font-weight: 900;
   text-shadow: 1px 1px 6px cyan;
   text-align: center;
+}
+.madbarColumn {
+}
+.madbarColumn p {
+  max-width: 80%;
+  margin: 0 auto;
+  padding-top: 15px;
+  line-height: 1.3em;
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.4em;
+  color: #12237e;
+}
+.carouselColumn {
+  margin: 0 auto;
+}
+.madbarColumn img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.carousel {
+  margin: 0 auto;
+  width: 640px;
+}
+/* NEWS BAR*/
+.newsBar {
+  background-color: grey;
+  height: 100px;
+  box-shadow: 1px 1px 4px black;
+  font-size: 1.2em;
+  font-family: 'Sansita One', monospace;
+  margin-top: 25px;
+}
+.newsBar:hover {
+  background-color: pink;
 }
