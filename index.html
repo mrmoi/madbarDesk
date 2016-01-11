@@ -24,7 +24,7 @@
 </head>
 <body>
 <!-- NAVIGATION BAR -->
-  <nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse customNav">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -50,7 +50,7 @@
         <li><a href="#news">News</a></li>
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#history">History</a></li>
-        <li><a ng-hide="currentUser" ng-href="#/login">Staff Login</a></li>
+        <li class="staffOnly"><a ng-hide="currentUser" ng-href="#/login">Staff Login</a></li>
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu<span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -67,7 +67,6 @@
   </div><!-- /.container-fluid -->
 </nav>
 
-
 <!--
   <div class="userinfo" ng-show="currentUser" ng-controller="RegistrationController">
   <span class="userinfo"> Hi {{ currentUser.firstname }} </span>
@@ -76,10 +75,6 @@
 -->
 
     <main ng-view></main>
-
-
-
-
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>

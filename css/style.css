@@ -13,14 +13,7 @@
 
 /* MAIN STYLES */
 body {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f2f6f8+17,b5c6d0+38,a8b4bf+55,a8b4bf+57,b5c6d0+72,e0eff9+94 */
-  background: #f2f6f8; /* Old browsers */
-  background: -moz-linear-gradient(-45deg,  #f2f6f8 17%, #b5c6d0 38%, #a8b4bf 55%, #a8b4bf 57%, #b5c6d0 72%, #e0eff9 94%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg,  #f2f6f8 17%,#b5c6d0 38%,#a8b4bf 55%,#a8b4bf 57%,#b5c6d0 72%,#e0eff9 94%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg,  #f2f6f8 17%,#b5c6d0 38%,#a8b4bf 55%,#a8b4bf 57%,#b5c6d0 72%,#e0eff9 94%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', endColorstr='#e0eff9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-  background-repeat: no-repeat;
-  min-height: 600px;
+
 }
 
 /* HOME PAGE STYLES */
@@ -57,15 +50,24 @@ body {
   margin: 0 auto;
   width: 640px;
 }
-/* NEWS BAR*/
-.newsBar {
-  background-color: grey;
-  height: 100px;
-  box-shadow: 1px 1px 4px black;
-  font-size: 1.2em;
-  font-family: 'Sansita One', monospace;
-  margin-top: 25px;
+.madbarFront {
+  margin: 0 auto;
+  background-color: #f2f2f2;
+  width: 65%;
+  -webkit-box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.39);
+  -moz-box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.39);
+  box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.39);
 }
-.newsBar:hover {
-  background-color: pink;
+.madbarFront p {
+  width: 65%;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  line-height: 1.3em;
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.4em;
+  color: #12237e;
+}
+.jumbotron {
+  background: url('../img/jumboPic.jpg') no-repeat center center;
 }
