@@ -13,7 +13,9 @@
 
 /* MAIN STYLES */
 body {
-
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 /* HOME PAGE STYLES */
@@ -68,6 +70,61 @@ body {
   font-size: 1.4em;
   color: #12237e;
 }
-.jumbotron {
-  background: url('../img/jumboPic.jpg') no-repeat center center;
+
+
+
+
+
+
+
+header .fullheight {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../img/jumboPic.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+header .fullheight .hgroup {
+  padding: 100px 0;
+}
+
+header .fullheight .hgroup h1 {
+  color: #FFFFFF;
+  font-size: 5em;
+  font-weight: 800;
+  line-height: .8em;
+  text-shadow: #000000 0 0 20px;
+  text-align: center;
+}
+
+header .fullheight .hgroup h2 {
+  display: block;
+  color: #FFFFFF;
+  width: 60%;
+  max-width: 200px;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid #FFFFFF;
+  margin-top: 15px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 1.3em;
+}
+
+header .fullheight .hgroup p {
+  text-align: center;
+}
+
+header .fullheight .hgroup p img {
+  padding-top: 50px;
+  max-width: 50px;
 }
