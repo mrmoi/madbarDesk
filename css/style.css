@@ -71,60 +71,24 @@ body {
   color: #12237e;
 }
 
-
-
-
-
-
-
-header .fullheight {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../img/jumboPic.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
+.homeContainer {
+  background: url('../img/jumboPic.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  justify-content: center;
+  width: 100%;
+  min-height: 650px;
 }
 
-header .fullheight .hgroup {
-  padding: 100px 0;
-}
-
-header .fullheight .hgroup h1 {
-  color: #FFFFFF;
-  font-size: 5em;
-  font-weight: 800;
-  line-height: .8em;
-  text-shadow: #000000 0 0 20px;
+.homeTitle {
+  font-family: 'Kanit', sans-serif;
+  font-size: 9.8em;
+  color: #12237e;
+  font-weight: 900;
+  text-shadow: 1px 1px 6px cyan;
   text-align: center;
-}
-
-header .fullheight .hgroup h2 {
-  display: block;
-  color: #FFFFFF;
-  width: 60%;
-  max-width: 200px;
-  margin: 0 auto;
-  text-align: center;
-  border: 1px solid #FFFFFF;
-  margin-top: 15px;
-  padding: 10px;
-  background: rgba(0, 0, 0, 0.5);
-  font-size: 1.3em;
-}
-
-header .fullheight .hgroup p {
-  text-align: center;
-}
-
-header .fullheight .hgroup p img {
-  padding-top: 50px;
-  max-width: 50px;
+  position: relative;
+  top: 300px;
+  z-index: 1;
 }
