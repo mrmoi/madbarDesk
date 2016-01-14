@@ -10,7 +10,19 @@
   padding: 3px;
   background-color: #cfd8dc;
 }
-
+/* NAVBAR STYLES */
+.customNav {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.customNav a {
+  color: white;
+}
+.customNav a:hover {
+  color: black;
+}
+.active {
+  color: black;
+}
 /* MAIN STYLES */
 body {
   position: absolute;
@@ -19,76 +31,25 @@ body {
 }
 
 /* HOME PAGE STYLES */
-.madbarHeading {
-  font-family: 'Kanit', sans-serif;
-  font-size: 5.8em;
-  color: #12237e;
-  font-weight: 900;
-  text-shadow: 1px 1px 6px cyan;
-  text-align: center;
-}
-.madbarColumn {
-}
-.madbarColumn p {
-  max-width: 80%;
-  margin: 0 auto;
-  padding-top: 15px;
-  line-height: 1.3em;
-  font-family: 'Dosis', sans-serif;
-  font-size: 1.4em;
-  color: #12237e;
-}
-.carouselColumn {
-  margin: 0 auto;
-}
-.madbarColumn img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-.carousel {
-  margin: 0 auto;
-  width: 640px;
-}
-.madbarFront {
-  margin: 0 auto;
-  background-color: #f2f2f2;
-  width: 65%;
-  -webkit-box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.39);
-  -moz-box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.39);
-  box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.39);
-}
-.madbarFront p {
-  width: 65%;
-  margin: 0 auto;
-  padding-top: 10px;
-  padding-bottom: 20px;
-  line-height: 1.3em;
-  font-family: 'Dosis', sans-serif;
-  font-size: 1.4em;
-  color: #12237e;
+#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
 
-.homeContainer {
-  background: url('../img/jumboPic.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  width: 100%;
-  min-height: 650px;
-}
 
-.homeTitle {
-  font-family: 'Kanit', sans-serif;
-  font-size: 9.8em;
-  color: #12237e;
-  font-weight: 900;
-  text-shadow: 1px 1px 6px cyan;
-  text-align: center;
-  position: relative;
-  top: 300px;
-  z-index: 1;
-}
+
+/* MEDIA QUERIES */
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) { }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { }
