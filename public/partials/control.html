@@ -1,0 +1,55 @@
+<h1>CONTROL</h1>
+<!--<button type="submit" name="button" ng-submit="logout()">Logout</button>-->
+
+<div class="textintro">
+    <h1>Add a meeting</h1>
+    <p>Type a meeting name and hit +</p>
+  </div>
+    <form class="formgroup addmeeting cf"
+          name="myform"
+          ng-submit="addPlayer()"
+          novalidate>
+
+    <div class="inputwrapper">
+    <input type="text" name="playername"
+           placeholder="Player name"
+           ng-model="playername" ng-required="true">
+    </div>
+
+    <div class="inputwrapper">
+    <input type="text" name="playerposition"
+           placeholder="Player position"
+           ng-model="playerposition" ng-required="true">
+    </div>
+
+    <div class="inputwrapper">
+    <input type="text" name="playernationality"
+           placeholder="Player nationality"
+           ng-model="playernationality" ng-required="true">
+    </div>
+
+    <div class="inputwrapper">
+    <input type="text" name="playernumber"
+           placeholder="Player number"
+           ng-model="playernumber" ng-required="true">
+    </div>
+
+    <div class="inputwrapper">
+    <input type="text" name="playerstatus"
+           placeholder="Player status"
+           ng-model="playerstatus" ng-required="true">
+    </div>
+
+    <button type="submit" class="btn"
+            ng-disabled="myform.$invalid">+</button>
+    </form>
+
+    <h2>Your Players</h2>
+    <div class="meeting" ng-repeat="(key, player) in players">
+      <h3>{{ player.name }}</h3>
+      <p>{{ player.position }}</p>
+      <p>{{ player.nationality }}</p>
+      <p>{{ player.number }}</p>
+      <p>{{ player.status }}</p>
+
+    </div>

@@ -1,0 +1,39 @@
+<div class="container-fluid blueBackground">
+  <div class="row">
+    <div class="col-xs-1 col-sm-3 col-md-3 col-lg-4"></div>
+    <div class="col-xs-10 col-sm-6 col-md-6 col-lg-4">
+      <div class="container-fluid homeDiv">
+
+
+        <h1>MadBar FC</h1>
+        <h5>Amateur Soccer Team</h5>
+
+    <form name="myform"
+            ng-submit="login()"
+            novalidate>
+
+        <fieldset>
+          <input type="email" name="email" placeholder="Email"
+                 ng-model="user.email"
+                 ng-required="true">
+
+                 <p ng-show="myform.email.$invalid && myform.email.$touched" class="error validationerror">
+                 Must be a valid email.</p>
+
+          <input type="password" name="password" placeholder="Password"
+                 ng-model="user.password"
+                 ng-required="true"
+                 ng-minlength="6">
+
+                 <p ng-show="myform.password.$invalid && myform.password.$touched" class="error validationerror">
+                 Password is required.</p>
+        </fieldset>
+        <button type="submit" class="btn" ng-disabled="myform.$invalid">Login</button>
+      </form>
+
+
+    </div>
+  </div>
+  <div class="col-xs-1 col-sm-3 col-md-3 col-lg-4"></div>
+</div>
+</div>
