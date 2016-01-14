@@ -39,7 +39,10 @@ body {
   min-height: 100%;
 }
 
-
+.homeDiv {
+  position: relative;
+  top: 7em;
+}
 
 /* MEDIA QUERIES */
 /* Extra small devices (phones, less than 768px) */
