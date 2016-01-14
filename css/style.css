@@ -14,15 +14,7 @@
 .customNav {
   background-color: rgba(0, 0, 0, 0.5);
 }
-.customNav a {
-  color: white;
-}
-.customNav a:hover {
-  color: black;
-}
-.active {
-  color: black;
-}
+
 /* MAIN STYLES */
 body {
   position: absolute;
@@ -41,18 +33,159 @@ body {
 
 .homeDiv {
   position: relative;
-  top: 7em;
+  top: 8em;
 }
 
+.panel-heading {
+  background-color: black;
+}
+.panel-body {
+  background-color: white;
+  color: #1a237e;
+  font-family: 'Dosis', cursive;
+  font-size: 1.2em;
+}
+.panel-title {
+  color: cyan;
+  font-family: 'Lobster', fantasy;
+  font-size: 1.3em;
+}
 /* MEDIA QUERIES */
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: @screen-sm-min) { }
+@media (min-width: 320px) {
+  .homeDiv h1 {
+    font-size: 2.8em;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 900;
+    color:#1a237e;
+    text-shadow:2px 2px 0 lightblue, 4px 4px 0 cyan;
+  }
+
+  .homeDiv h5 {
+    font-size: 1.5em;
+    text-align: center;
+    font-family: 'Montez', monospace;
+    color: orange;
+    text-shadow: black 2px 2px 1px;
+    font-weight: bold;
+  }
+
+  .homeDiv p {
+    font-size: 15px;
+  }
+}
 
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) { }
+@media (min-width: 760px) {
+
+  .homeDiv h1 {
+    font-size: 3.3em;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 900;
+    color:#1a237e;
+    text-shadow:2px 2px 0 lightblue, 4px 4px 0 cyan;
+  }
+
+  .homeDiv h5 {
+    font-size: 1.4em;
+    text-align: center;
+    font-family: 'Montez', monospace;
+    color: orange;
+    text-shadow: black 2px 2px 1px;
+    font-weight: bold;
+  }
+
+  .homeDiv p {
+    font-size: 16px;
+  }
+}
 
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: @screen-lg-min) { }
+@media (min-width:1024px) {
+
+  .homeDiv h1 {
+    font-size: 4.5em;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 900;
+    color:#1a237e;
+    text-shadow:2px 2px 0 lightblue, 4px 4px 0 cyan;
+  }
+
+  .homeDiv h5 {
+    font-size: 1.9em;
+    text-align: center;
+    font-family: 'Montez', monospace;
+    color: orange;
+    text-shadow: black 2px 2px 1px;
+    font-weight: bold;
+  }
+
+  .homeDiv p {
+    font-size: 17px;
+  }
+
+}
+
+/* HISTORY TEMPLATE STYLES*/
+.blueBackground {
+  background: #5f2c82; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #5f2c82 , #49a09d); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #5f2c82 , #49a09d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+/* control TEMPLATE STYLES*/
+.greenBackground {
+  background: #134E5E; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #134E5E , #71B280); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #134E5E , #71B280); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* gallery TEMPLATE STYLES*/
+.newsBackground {
+
+}
+/* login TEMPLATE STYLES*/
+.newsBackground {
+
+}
+/* news TEMPLATE STYLES*/
+.newsBackground {
+
+}
+/* standings TEMPLATE STYLES*/
+.newsBackground {
+
+}
+/* tlocations TEMPLATE STYLES*/
+.newsBackground {
+
+}
+/* players TEMPLATE STYLES*/
+.newsBackground {
+
+}
+/* glocations TEMPLATE STYLES*/
+.newsBackground {
+
+}
+/* fixtures TEMPLATE STYLES*/
+.newsBackground {
+
+}
