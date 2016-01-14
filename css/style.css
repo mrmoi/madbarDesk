@@ -157,35 +157,9 @@ body {
   min-height: 100%;
 }
 
-/* gallery TEMPLATE STYLES*/
-.newsBackground {
-
-}
-/* login TEMPLATE STYLES*/
-.newsBackground {
-
-}
-/* news TEMPLATE STYLES*/
-.newsBackground {
-
-}
-/* standings TEMPLATE STYLES*/
-.newsBackground {
-
-}
-/* tlocations TEMPLATE STYLES*/
-.newsBackground {
-
-}
-/* players TEMPLATE STYLES*/
-.newsBackground {
-
-}
-/* glocations TEMPLATE STYLES*/
-.newsBackground {
-
-}
-/* fixtures TEMPLATE STYLES*/
-.newsBackground {
-
+.soccerBall {
+  height: 50px;
+  width: 50px;
+  position: relative;
+  top: 38em;
 }
