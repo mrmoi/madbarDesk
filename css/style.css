@@ -44,16 +44,29 @@ body {
   color: #1a237e;
   font-family: 'Dosis', cursive;
   font-size: 1.2em;
+  width: 100%;
 }
 .panel-title {
   color: cyan;
   font-family: 'Lobster', fantasy;
   font-size: 1.3em;
 }
+.newsBar {
+    border: 2px solid black;
+}
+#newsBar {
+    background-color: rgba(0, 0, 0, 0.2);
+}
 
 
 
 
+/* NEWS TEMPLATE STYLES */
+.divider {
+    height: 10px;
+    background-color: darkblue;
+    margin-bottom: 10px;
+}
 
 /* MEDIA QUERIES */
 /* Extra small devices (phones, less than 768px) */
