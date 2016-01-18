@@ -1,5 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto|Poiret+One|Lobster|Limelight|Sansita+One|Roboto+Slab:300|Montez);
 @import url(https://fonts.googleapis.com/css?family=Vollkorn:400,700|Kanit:400,800);
+
+body {
+  background: #abbaab; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #abbaab , #ffffff); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #abbaab , #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+main {
+  margin-top: 50px;
+}
+
 /* EXTRAS */
 .teamBrand {
   font-family: 'Kanit', sans-serif;
@@ -10,30 +20,10 @@
   padding: 3px;
   background-color: #cfd8dc;
 }
+
 /* NAVBAR STYLES */
 .customNav {
   background-color: rgba(0, 0, 0, 0.5);
-}
-
-/* MAIN STYLES */
-body {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-/* HOME PAGE STYLES */
-#bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
-}
-
-.homeDiv {
-  position: relative;
-  top: 8em;
 }
 
 .panel-heading {
@@ -51,22 +41,13 @@ body {
   font-family: 'Lobster', fantasy;
   font-size: 1.3em;
 }
-.newsBar {
-    border: 2px solid black;
-}
-#newsBar {
-    background-color: rgba(0, 0, 0, 0.2);
-}
 
+/* GALLERY STYLES */
 
 
 
 /* NEWS TEMPLATE STYLES */
-.divider {
-    height: 10px;
-    background-color: darkblue;
-    margin-bottom: 10px;
-}
+
 
 /* MEDIA QUERIES */
 /* Extra small devices (phones, less than 768px) */
@@ -95,6 +76,11 @@ body {
   .homeDiv p {
     font-size: 15px;
   }
+  .logoImage {
+    width: 80px;
+    height: 100px;
+    margin-left: 29%;
+  }
 }
 
 @media (min-width: 480px) {
@@ -118,6 +104,11 @@ body {
 
   .homeDiv p {
     font-size: 15px;
+  }
+  .logoImage {
+    width: 80px;
+    height: 100px;
+    margin-left: 32%;
   }
 }
 
@@ -145,6 +136,11 @@ body {
   .homeDiv p {
     font-size: 16px;
   }
+  .logoImage {
+    width: 80px;
+    height: 100px;
+    margin-left: 40%;
+  }
 }
 
 /* Large devices (large desktops, 1200px and up) */
@@ -170,6 +166,11 @@ body {
 
   .homeDiv p {
     font-size: 17px;
+  }
+  .logoImage {
+    width: 80px;
+    height: 100px;
+    margin-left: 40%;
   }
 
 }
@@ -198,6 +199,12 @@ body {
     font-size: 17px;
   }
 
+  .logoImage {
+    width: 80px;
+    height: 100px;
+    margin-left: 40%;
+  }
+
 }
 
 
@@ -206,33 +213,144 @@ body {
 
 
 /* HISTORY TEMPLATE STYLES*/
-.blueBackground {
-  background: #5f2c82; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #5f2c82 , #49a09d); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #5f2c82 , #49a09d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-  position: fixed;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
+/* NEW HOME STYLES */
+.jumboDiv{
+  padding: 0px 20px 10px 20px;
 }
-/* control TEMPLATE STYLES*/
-.greenBackground {
-  background: #134E5E; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #134E5E , #71B280); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #134E5E , #71B280); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.jumbotron {
+  background-image: url('../img/jumboPic.jpg');
+}
+.jumbotron h1 {
+  font-size: 4.7em;
+  text-align: center;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 900;
+  color:#1a237e;
+  text-shadow:2px 2px 0 lightblue, 4px 4px 0 cyan;
+}
+.jumbotron h4 {
+  font-size: 2.4em;
+  text-align: center;
+  font-family: 'Montez', monospace;
+  color: orange;
+  text-shadow: black 2px 2px 1px;
+  font-weight: bold;
+}
+.jumbotron p {
+    text-align: center;
+}
+.btn-info {
+    background-color: black;
+    color: cyan;
+}
+.btn-info:hover {
+    background-color: cyan;
+    color: black;
+}
 
-  position: fixed;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
+/* second section */
+.leftDiv {
+    text-align: center;
+
+}
+.leftDiv h2 {
+  font-size: 2.5em;
+  text-align: center;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 900;
+  color:#1a237e;
+  text-shadow:2px 2px 0 lightblue, 4px 4px 0 cyan;
+  margin-top: 5px;
+}
+.leftDiv h5 {
+  font-size: 1.4em;
+  line-height: 1.2em;
+  text-align: left;
+  font-family: 'Dosis', monospace;
+  color: black;
+  text-shadow: 1px 1px 1px orange;
+  font-weight: bold;
+}
+.centerDiv {
+    text-align: center;
+}
+.centerDiv h2 {
+  font-size: 2.5em;
+  text-align: center;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 900;
+  color:#1a237e;
+  text-shadow:2px 2px 0 lightblue, 4px 4px 0 cyan;
+  margin-top: 5px;
+}
+.centerDiv h5 {
+  font-size: 1.4em;
+  line-height: 1.2em;
+  text-align: left;
+  font-family: 'Dosis', monospace;
+  color: black;
+  text-shadow: 1px 1px 1px orange;
+  font-weight: bold;
+}
+.rigthDiv {
+    text-align: center;
+}
+.rightDiv h2 {
+  font-size: 2.5em;
+  text-align: center;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 900;
+  color:#1a237e;
+  text-shadow:2px 2px 0 lightblue, 4px 4px 0 cyan;
+  margin-top: 5px;
+}
+.rightDiv h5 {
+  font-size: 1.4em;
+  line-height: 1.2em;
+  text-align: left;
+  font-family: 'Dosis', monospace;
+  color: black;
+  text-shadow: 1px 1px 1px orange;
+  font-weight: bold;
+}
+.imgSize {
+    height: 200px;
+    width: 240px;
+    border-radius: 10%;
 }
 
-.soccerBall {
-  height: 50px;
-  width: 50px;
-  position: relative;
-  top: 38em;
+/* SECTION 3 */
+.newsBar {
+    margin-top: 20px;
+    
 }
+
+/* SECTION 4 */
+.row2right {
+  height: 200px;
+}
+.row2right h2 {
+  font-size: 2.5em;
+  text-align: center;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 900;
+  color:#1a237e;
+  text-shadow:2px 2px 0 lightblue, 4px 4px 0 cyan;
+  margin-top: 5px;
+}
+
+.row2left {  
+  height: 200px;
+}
+.row2left h2 {
+  font-size: 2.5em;
+  text-align: center;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 900;
+  color:#1a237e;
+  text-shadow:2px 2px 0 lightblue, 4px 4px 0 cyan;
+  margin-top: 5px;
+}
+
+

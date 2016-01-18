@@ -4,20 +4,23 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
   <!-- FONTS --->
   <link href='https://fonts.googleapis.com/css?family=Lato:700|Titillium+Web:700|Playfair+Display:900|Dosis|Shadows+Into+Light|Alegreya+Sans' rel='stylesheet' type='text/css'>
-    
+
   <!-- STYLE SHEETS --->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/animations.css">
-    
+    <link rel="stylesheet" href="css/hover-min.css">
+    <link rel="stylesheet" href="css/hover.css">
+    <link rel="stylesheet" href="css/demo-page.css">
+
   <!-- ANGULAR LIBRARIES -->
   <script src="js/lib/angular/angular.min.js"></script>
   <script src="js/lib/angular/angular-route.min.js"></script>
   <script src="js/lib/angular/angular-animate.min.js"></script>
-    
+
   <!-- FIREBASE AND ANGULARFIRE -->
   <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
   <script src="https://cdn.firebase.com/libs/angularfire/1.1.3/angularfire.min.js"></script>
@@ -28,7 +31,6 @@
 </head>
 
 <body>
-
   <!-- NAVIGATION BAR -->
   <nav class="navbar navbar-fixed-top navbar-inverse">
     <div class="container-fluid">
@@ -78,7 +80,6 @@
     <a ng-href="#/login" ng-click="logout()">logout</a>
     </div>
   -->
-
 <main ng-view></main>
 
 <!--
