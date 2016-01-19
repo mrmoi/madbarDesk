@@ -30,9 +30,17 @@ main {
 }
 .nav li a {
     color: white;
+    font-family: 'Poiret One', monospace;
+    font-weight: bolder;
 }
 .nav li a:hover {
     color: white;
+    background-color: black;
+}
+.nav li a:visited {
+    background-color: black;
+}
+.dropdown-toggle:visited {
     background-color: black;
 }
 .dropdown-menu {
@@ -43,16 +51,34 @@ main {
 }
 .dropdown-toggle {
     background-color: black;
+    color: black;
+}
+.dropdown-toggle:visited {
+    background-color: black;
+}
+.dropdown-toggle:active {
+    background-color: black;
 }
 .dropdown-toggle:hover {
     background-color: black;
 }
-.dropdown:hover {
+.dropdown {
     background-color: black;
 }
-.open:hover {
+.dropdown:active {
     background-color: black;
 }
+.collapsed {
+    background-color: black;
+}
+.icon-bar {
+    background-color: white;
+}
+.custom-toggle:active {
+    background-color: black;
+    color: blanchedalmond;
+}
+
 
 
 
