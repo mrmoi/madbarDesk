@@ -7,7 +7,7 @@ body {
   background: linear-gradient(to left, #abbaab , #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 main {
-  margin-top: 50px;
+  margin-top: 25px;
 }
 
 /* EXTRAS */
@@ -22,9 +22,40 @@ main {
 }
 
 /* NAVBAR STYLES */
-.customNav {
-  background-color: rgba(0, 0, 0, 0.5);
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7);
 }
+.nav {
+    
+}
+.nav li a {
+    color: white;
+}
+.nav li a:hover {
+    color: white;
+    background-color: black;
+}
+.dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.dropdown-menu:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.dropdown-toggle {
+    background-color: black;
+}
+.dropdown-toggle:hover {
+    background-color: black;
+}
+.dropdown:hover {
+    background-color: black;
+}
+.open:hover {
+    background-color: black;
+}
+
+
+
 
 .panel-heading {
   background-color: black;
@@ -43,17 +74,12 @@ main {
 }
 
 /* GALLERY STYLES */
-
-
-
 /* NEWS TEMPLATE STYLES */
-
-
 /* MEDIA QUERIES */
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 
-/* Small devices (tablets, 768px and up) */
+/* Small devices (tablets, 768px and up) 
 @media (min-width: 320px) {
   .homeDiv h1 {
     font-size: 2.8em;
@@ -82,130 +108,10 @@ main {
     margin-left: 29%;
   }
 }
+*/
 
-@media (min-width: 480px) {
-  .homeDiv h1 {
-    font-size: 3.5em;
-    text-align: center;
-    font-family: 'Kanit', sans-serif;
-    font-weight: 900;
-    color:#1a237e;
-    text-shadow:2px 2px 0 lightblue, 4px 4px 0 cyan;
-  }
 
-  .homeDiv h5 {
-    font-size: 1.8em;
-    text-align: center;
-    font-family: 'Montez', monospace;
-    color: orange;
-    text-shadow: black 2px 2px 1px;
-    font-weight: bold;
-  }
 
-  .homeDiv p {
-    font-size: 15px;
-  }
-  .logoImage {
-    width: 80px;
-    height: 100px;
-    margin-left: 32%;
-  }
-}
-
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 700px) {
-
-  .homeDiv h1 {
-    font-size: 3.4em;
-    text-align: center;
-    font-family: 'Kanit', sans-serif;
-    font-weight: 900;
-    color:#1a237e;
-    text-shadow:2px 2px 0 lightblue, 4px 4px 0 cyan;
-  }
-
-  .homeDiv h5 {
-    font-size: 1.8em;
-    text-align: center;
-    font-family: 'Montez', monospace;
-    color: orange;
-    text-shadow: black 2px 2px 1px;
-    font-weight: bold;
-  }
-
-  .homeDiv p {
-    font-size: 16px;
-  }
-  .logoImage {
-    width: 80px;
-    height: 100px;
-    margin-left: 40%;
-  }
-}
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width:1000px) {
-
-  .homeDiv h1 {
-    font-size: 3.8em;
-    text-align: center;
-    font-family: 'Kanit', sans-serif;
-    font-weight: 900;
-    color:#1a237e;
-    text-shadow:2px 2px 0 lightblue, 4px 4px 0 cyan;
-  }
-
-  .homeDiv h5 {
-    font-size: 2.1em;
-    text-align: center;
-    font-family: 'Montez', monospace;
-    color: orange;
-    text-shadow: black 2px 2px 1px;
-    font-weight: bold;
-  }
-
-  .homeDiv p {
-    font-size: 17px;
-  }
-  .logoImage {
-    width: 80px;
-    height: 100px;
-    margin-left: 40%;
-  }
-
-}
-
-@media (min-width:1240px) {
-
-  .homeDiv h1 {
-    font-size: 4.9em;
-    text-align: center;
-    font-family: 'Kanit', sans-serif;
-    font-weight: 900;
-    color:#1a237e;
-    text-shadow:2px 2px 0 lightblue, 4px 4px 0 cyan;
-  }
-
-  .homeDiv h5 {
-    font-size: 2.4em;
-    text-align: center;
-    font-family: 'Montez', monospace;
-    color: orange;
-    text-shadow: black 2px 2px 1px;
-    font-weight: bold;
-  }
-
-  .homeDiv p {
-    font-size: 17px;
-  }
-
-  .logoImage {
-    width: 80px;
-    height: 100px;
-    margin-left: 40%;
-  }
-
-}
 
 
 
@@ -216,7 +122,7 @@ main {
 
 /* NEW HOME STYLES */
 .jumboDiv{
-  padding: 0px 20px 10px 20px;
+  padding: 0px 20px 0px 20px;
 }
 .jumbotron {
   background-image: url('../img/jumboPic.jpg');
@@ -251,73 +157,78 @@ main {
 
 /* second section */
 .leftDiv {
-    text-align: center;
-
+    text-align: left;
 }
 .leftDiv h2 {
-  font-size: 2.5em;
+  font-size: 2.2em;
   text-align: center;
   font-family: 'Kanit', sans-serif;
   font-weight: 900;
   color:#1a237e;
   text-shadow:2px 2px 0 lightblue, 4px 4px 0 cyan;
   margin-top: 5px;
+  padding-bottom: 10px;
 }
 .leftDiv h5 {
   font-size: 1.4em;
-  line-height: 1.2em;
+  line-height: 1.4em;
   text-align: left;
   font-family: 'Dosis', monospace;
   color: black;
   text-shadow: 1px 1px 1px orange;
   font-weight: bold;
+  padding-top: 10px;
 }
 .centerDiv {
     text-align: center;
 }
 .centerDiv h2 {
-  font-size: 2.5em;
+  font-size: 2.2em;
   text-align: center;
   font-family: 'Kanit', sans-serif;
   font-weight: 900;
   color:#1a237e;
   text-shadow:2px 2px 0 lightblue, 4px 4px 0 cyan;
   margin-top: 5px;
+    padding-bottom: 10px;
 }
 .centerDiv h5 {
   font-size: 1.4em;
-  line-height: 1.2em;
+  line-height: 1.4em;
   text-align: left;
   font-family: 'Dosis', monospace;
   color: black;
   text-shadow: 1px 1px 1px orange;
   font-weight: bold;
+  padding-top: 10px;
 }
 .rigthDiv {
     text-align: center;
 }
 .rightDiv h2 {
-  font-size: 2.5em;
+  font-size: 2.2em;
   text-align: center;
   font-family: 'Kanit', sans-serif;
   font-weight: 900;
   color:#1a237e;
   text-shadow:2px 2px 0 lightblue, 4px 4px 0 cyan;
   margin-top: 5px;
+  padding-bottom: 10px;
 }
 .rightDiv h5 {
   font-size: 1.4em;
-  line-height: 1.2em;
+  line-height: 1.4em;
   text-align: left;
   font-family: 'Dosis', monospace;
   color: black;
   text-shadow: 1px 1px 1px orange;
   font-weight: bold;
+  padding-top: 10px;
 }
 .imgSize {
     height: 200px;
     width: 240px;
-    border-radius: 10%;
+    border-radius: 50%;
 }
 
 /* SECTION 3 */
@@ -353,6 +264,14 @@ main {
   margin-top: 5px;
   padding-bottom: 15px;
 }
+.row2left h5 {
+    font-size: 1.3em;
+    line-height: 1.0em;
+    text-align: center;
+    font-family: 'Dosis', monospace;
+    color: black;
+    text-shadow: 1px 1px 1px cyan;
+}
 .row2left p {
   font-size: 1.4em;
   line-height: 1.2em;
@@ -361,7 +280,7 @@ main {
   color: black;
   text-shadow: 1px 1px 1px orange;
   font-weight: bold;
-  padding-top: 15px;
+  padding-top: 5px;
   padding-bottom: 15px;
 }
 
