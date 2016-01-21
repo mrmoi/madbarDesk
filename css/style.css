@@ -182,16 +182,20 @@ main {
 }
 
 /* second section */
+.secondRow {
+    padding-top: 25px;
+    padding-bottom: 25px;    
+}
 .leftDiv {
-    text-align: left;
+  text-align: left;
 }
 .leftDiv h2 {
   font-size: 2.2em;
   text-align: center;
   font-family: 'Kanit', sans-serif;
   font-weight: 900;
-  color:#1a237e;
-  text-shadow:2px 2px 0 lightblue, 4px 4px 0 cyan;
+  color: orange;
+  text-shadow:2px 2px 0 darkblue, 4px 4px 0 cyan;
   margin-top: 5px;
   padding-bottom: 10px;
 }
@@ -213,8 +217,8 @@ main {
   text-align: center;
   font-family: 'Kanit', sans-serif;
   font-weight: 900;
-  color:#1a237e;
-  text-shadow:2px 2px 0 lightblue, 4px 4px 0 cyan;
+  color: orange;
+  text-shadow:2px 2px 0 darkblue, 4px 4px 0 cyan;
   margin-top: 5px;
     padding-bottom: 10px;
 }
@@ -236,8 +240,8 @@ main {
   text-align: center;
   font-family: 'Kanit', sans-serif;
   font-weight: 900;
-  color:#1a237e;
-  text-shadow:2px 2px 0 lightblue, 4px 4px 0 cyan;
+  color: orange;
+  text-shadow:2px 2px 0 darkblue, 4px 4px 0 cyan;
   margin-top: 5px;
   padding-bottom: 10px;
 }
@@ -253,78 +257,102 @@ main {
 }
 .imgSize {
     height: 200px;
-    width: 240px;
+    width: 220px;
     border-radius: 50%;
 }
 
-/* SECTION 3 */
-.newsBar {
-    
-}
+/* NEWS SECTION 3 */
 .newsDiv {
-    background: #757F9A; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #757F9A , #D7DDE8); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #757F9A , #D7DDE8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
-    height: 150px;
-    margin-bottom: 35px;
-    margin-top: 35px;
-    padding-top: 3%;
+    padding-bottom: 25px;
 }
 .newsDiv h2 {
-  font-size: 1.9em;
+  font-size: 2.2em;
   text-align: center;
   font-family: 'Kanit', sans-serif;
   font-weight: 900;
-  color:#1a237e;
-  text-shadow:2px 2px 0 lightblue, 4px 4px 0 cyan;
+  color: orange;
+  text-shadow:2px 2px 0 darkblue, 4px 4px 0 cyan;
+  margin-top: 20px;
+  padding-bottom: 5px;
+}
+.newsGroup {
+    color: white;
+}
+.list-group-item {
+    background-color: #1a237e;
+    font-family: 'Dosis', monospace;
+    font-size: 1.4em;
+    color: orange;
+}
+.newsHeadline {
+    color: orange;
 }
 
+
 /* SECTION 4 */
+.fourthRow {
+    background: #ECE9E6; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #ECE9E6 , #FFFFFF); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #ECE9E6 , #FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    padding-top: 15px;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
 .row2right {
-  height: 200px;
 }
 .row2right h2 {
-  font-size: 2.5em;
+  font-size: 2.1em;
   text-align: center;
   font-family: 'Kanit', sans-serif;
   font-weight: 900;
-  color:#1a237e;
-  text-shadow:2px 2px 0 lightblue, 4px 4px 0 cyan;
+  color: orange;
+  text-shadow:2px 2px 0 darkblue, 4px 4px 0 cyan;
   margin-top: 5px;
 }
 
 .row2left {  
-  padding-bottom: 50px;
+  padding-bottom: 0px;
 }
 .row2left h2 {
   font-size: 2.1em;
   text-align: center;
   font-family: 'Kanit', sans-serif;
   font-weight: 900;
-  color:#1a237e;
-  text-shadow:2px 2px 0 lightblue, 4px 4px 0 cyan;
+  color: orange;
+  text-shadow:2px 2px 0 darkblue, 4px 4px 0 cyan;
   margin-top: 5px;
-  padding-bottom: 15px;
 }
 .row2left h5 {
-    font-size: 1.3em;
-    line-height: 1.0em;
+    font-size: 1.1em;
     text-align: center;
-    font-family: 'Dosis', monospace;
+    font-family: 'Roboto', monospace;
     color: black;
-    text-shadow: 1px 1px 1px cyan;
+    text-shadow: 1px 1px 1px darkgray;
 }
 .row2left p {
   font-size: 1.4em;
   line-height: 1.2em;
-  text-align: left;
+  text-align: center;
   font-family: 'Dosis', monospace;
   color: black;
   text-shadow: 1px 1px 1px orange;
   font-weight: bold;
   padding-top: 5px;
   padding-bottom: 15px;
+}
+
+.footer {
+    height: 70px;
+    background-color: black;
+    color: white;
+}
+.footer p {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 1.2em;
+    font-family: 'Dosis', monospace;
+    color: lightgray;
 }
 
 
