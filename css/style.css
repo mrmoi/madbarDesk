@@ -32,6 +32,7 @@ main {
     color: white;
     font-family: 'Poiret One', monospace;
     font-weight: bolder;
+    font-size: 1.1em;
 }
 .nav li a:hover {
     color: white;
@@ -78,7 +79,9 @@ main {
     background-color: black;
     color: blanchedalmond;
 }
-
+.staffOnly {
+    color: red;
+}
 
 
 
@@ -291,18 +294,22 @@ main {
 
 /* SECTION 4 */
 .fourthRow {
+    /*
     background: #ECE9E6; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #ECE9E6 , #FFFFFF); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #ECE9E6 , #FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /*background: -webkit-linear-gradient(to left, #ECE9E6 , #FFFFFF); /* Chrome 10-25, Safari 5.1-6 */
+    /*background: linear-gradient(to left, #ECE9E6 , #FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
-    padding-top: 15px;
-    padding-bottom: 0px;
-    margin-bottom: 10px;
+    background: #757F9A; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #757F9A , #D7DDE8); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #757F9A , #D7DDE8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
 }
+/* RIGHT AREA */
 .row2right {
+    margin: 5px 0px 5px 0px;
 }
 .row2right h2 {
-  font-size: 2.1em;
+  font-size: 1.9em;
   text-align: center;
   font-family: 'Kanit', sans-serif;
   font-weight: 900;
@@ -310,12 +317,25 @@ main {
   text-shadow:2px 2px 0 darkblue, 4px 4px 0 cyan;
   margin-top: 5px;
 }
-
-.row2left {  
-  padding-bottom: 0px;
+.row2right h5 {
+    
+}
+.row2right p {
+  font-size: 1.4em;
+  line-height: 1.2em;
+  text-align: center;
+  font-family: 'Dosis', monospace;
+  color: black;
+  text-shadow: 1px 1px 1px orange;
+  font-weight: bold;
+  padding-top: 5px;
+}
+/* LEFT AREA */
+.row2left {
+    margin: 5px 0px 5px 0px;
 }
 .row2left h2 {
-  font-size: 2.1em;
+  font-size: 1.9em;
   text-align: center;
   font-family: 'Kanit', sans-serif;
   font-weight: 900;
@@ -339,7 +359,6 @@ main {
   text-shadow: 1px 1px 1px orange;
   font-weight: bold;
   padding-top: 5px;
-  padding-bottom: 15px;
 }
 
 .footer {
