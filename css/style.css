@@ -259,20 +259,25 @@ main {
 
 /* SECTION 3 */
 .newsBar {
-    margin-top: 20px;
     
 }
 .newsDiv {
-    padding-bottom: 20px;
+    background: #757F9A; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #757F9A , #D7DDE8); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #757F9A , #D7DDE8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    height: 150px;
+    margin-bottom: 35px;
+    margin-top: 35px;
+    padding-top: 3%;
 }
 .newsDiv h2 {
-  font-size: 2.2em;
+  font-size: 1.9em;
   text-align: center;
   font-family: 'Kanit', sans-serif;
   font-weight: 900;
   color:#1a237e;
   text-shadow:2px 2px 0 lightblue, 4px 4px 0 cyan;
-  padding-top: 5px;
 }
 
 /* SECTION 4 */
