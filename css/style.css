@@ -2,9 +2,13 @@
 @import url(https://fonts.googleapis.com/css?family=Vollkorn:400,700|Kanit:400,800);
 
 body {
-    background: #ECE9E6; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #ECE9E6 , #FFFFFF); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #ECE9E6 , #FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /*background: #ECE9E6; /* fallback for old browsers */
+    /*background: -webkit-linear-gradient(to left, #ECE9E6 , #FFFFFF); /* Chrome 10-25, Safari 5.1-6 */
+    /*background: linear-gradient(to left, #ECE9E6 , #FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    background: #24C6DC; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #24C6DC , #514A9D); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #24C6DC , #514A9D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         
 }
 main {
@@ -269,6 +273,9 @@ main {
 .newsDiv {
     padding-bottom: 25px;
 }
+.newsDiv img {
+    height: 60px;
+}
 .newsDiv h2 {
   font-size: 2.2em;
   text-align: center;
@@ -306,6 +313,7 @@ main {
     background: linear-gradient(to left, #8e9eab , #eef2f3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
     border-radius: 25px;
+    border: 1px solid white;
 }
 /* RIGHT AREA */
 .row2right {
@@ -375,6 +383,10 @@ main {
     font-size: 1.2em;
     font-family: 'Dosis', monospace;
     color: lightgray;
+}
+.footer img {
+    height: 55px;
+    margin-top: 5px; 
 }
 
 /* NEWS PAGE STYLES */
@@ -455,7 +467,7 @@ main {
     height: 150px;
 }
 .historyDiv h2 {
-  font-size: 2.6em;
+  font-size: 2.8em;
   font-family: 'Kanit', sans-serif;
   font-weight: 900;
   color: orange;
@@ -464,8 +476,8 @@ main {
     text-align: center;
 }
 .historyDiv p {
-  font-size: 1.3em;
-  line-height: 1.5em;
+  font-size: 1.1em;
+  line-height: 1.7em;
   text-align: left;
   font-family: 'Dosis', monospace;
   color: black;
@@ -473,9 +485,62 @@ main {
   font-weight: bold;
   padding-top: 5px;
 }
-.historyDiv {
-    
+.historyDiv h3 {
+    font-size: 1.5em;
 }
 .historyDiv {
     
 }
+
+/* LOGIN DIV */
+.loginDiv {
+    
+}
+.loginDiv h2 {
+  font-size: 2.6em;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 900;
+  color: orange;
+  text-shadow:2px 2px 0 darkblue, 4px 4px 0 cyan;
+  margin-top: 5px;
+  text-align: left;
+}
+.loginDiv h5 {
+    font-size: 1.3em;
+    font-family: 'Roboto', monospace;
+    color: black;
+    text-shadow: 1px 1px 1px darkgray;
+    text-align: left;
+}
+.loginDiv form {
+    
+    
+    
+}
+.loginDiv input {
+    
+}
+.loginDiv button {
+    margin-top: 15px;
+    background-color: black;
+    color: cyan;
+}
+.loginDiv button:hover {
+    background-color: cyan;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
