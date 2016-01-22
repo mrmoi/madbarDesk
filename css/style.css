@@ -2,9 +2,10 @@
 @import url(https://fonts.googleapis.com/css?family=Vollkorn:400,700|Kanit:400,800);
 
 body {
-  background: #abbaab; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #abbaab , #ffffff); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #abbaab , #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #ECE9E6; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #ECE9E6 , #FFFFFF); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #ECE9E6 , #FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
 }
 main {
   margin-top: 25px;
@@ -273,8 +274,8 @@ main {
   text-align: center;
   font-family: 'Kanit', sans-serif;
   font-weight: 900;
-  color: orange;
-  text-shadow:2px 2px 0 darkblue, 4px 4px 0 cyan;
+  color: #1a237e;
+  text-shadow:2px 2px 0 lightblue, 4px 4px 0 cyan;
   margin-top: 20px;
   padding-bottom: 5px;
 }
@@ -285,10 +286,11 @@ main {
     background-color: #1a237e;
     font-family: 'Dosis', monospace;
     font-size: 1.4em;
-    color: orange;
+    font-weight: bold;
+    color: black;
 }
 .newsHeadline {
-    color: orange;
+    color: black;
 }
 
 
@@ -299,10 +301,11 @@ main {
     /*background: -webkit-linear-gradient(to left, #ECE9E6 , #FFFFFF); /* Chrome 10-25, Safari 5.1-6 */
     /*background: linear-gradient(to left, #ECE9E6 , #FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
-    background: #757F9A; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #757F9A , #D7DDE8); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #757F9A , #D7DDE8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        
+    background: #8e9eab; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #8e9eab , #eef2f3); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #8e9eab , #eef2f3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    border-radius: 25px;
 }
 /* RIGHT AREA */
 .row2right {
