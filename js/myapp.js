@@ -26,7 +26,7 @@ myApp.config(['$routeProvider', function($routeProvider) {
         }).
         when('/players', {
           templateUrl: 'partials/players.html',
-          //controller: 'RegistrationController'
+          controller: 'PlayersController'
         }).
         when('/fixtures', {
           templateUrl: 'partials/fixtures.html',

@@ -1,29 +1,61 @@
-<div class="container-fluid blueBackground">
-  <div class="row">
-    <div class="col-xs-1 col-sm-3 col-md-3 col-lg-4"></div>
-    <div class="col-xs-10 col-sm-6 col-md-6 col-lg-4">
-      <div class="container-fluid homeDiv">
-
-      <h1>MadBar FC</h1>
-      <h5>Amateur Soccer Team</h5>
-      <!--<div class="panel panel">
-        <div class="panel-heading">
-          <h3 class="panel-title">MadBar History</h3>
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-8 col-md-offset-2 playersDiv">
+    
+      <img src="img/teamLogo.png" class="pull-right logo"></img>      
+      <h2>MadBar FC</h2>
+      <h5>Players</h5> 
+      <div class="row">
+          
+          
+        <div class="col-sm-3 col-md-4" ng-repeat="(key, player) in players">
+        <div class="thumbnail playerCapsule">
+        <!--<img src="../img/adrian_rodriguez.jpeg" alt="Adrian Rodriguez">-->
+        <div class="caption">
+        <p>{{player.name}}</p>
+        <p>{{player.position}}</p>
+        <p>{{player.nationality}}</p>
+        <p>{{player.number}}</p>
+        <p>{{player.status}}</p>
+        <p><a href="#" class="btn btn-primary hvr-pulse" role="button">Button</a></p>
         </div>
-        <div class="panel-body">
-          <p>Formed in 2014 by a group of old boys of Wyggeston School as
-             "MadBar Fosse", the club joined the Small Goal Soccer Association in 2105.
-             Before moving to Filbert Street in 2016, the club played at five
-             different grounds, including Victoria Park south-east of the city
-             centre and the Belgrave Road Cricket and Bicycle Grounds. The club
-             also joined the Midland League in 2015, and was elected to Division
-             Two of the Football League in 2015 after finishing second.
-          </p>
         </div>
-      </div>-->
+        </div>
+          
 
+          
       </div>
-    </div>
-    <div class="col-xs-1 col-sm-3 col-md-3 col-lg-4"></div>
+      
+    
+    
+
+</div>    
 </div>
 </div>
+
+<!--
+    <ion-list ng-controller="PlayersController">
+    <a ng-href="#/app/profile/{{players.indexOf(player)}}" ng-repeat="player in players | filter: query" class="item item-avatar-left playersSection">
+      <img ng-src="../img/{{ player.shortname }}.jpeg" alt="{{ player.name }}" />
+      <h2>{{ player.name | uppercase }}</h2>
+      <h3>{{ player.position | uppercase }}</h3>
+    </a>
+  </ion-list>
+
+// player list controller
+.controller('PlayersController', function($scope, $http, $stateParams) {
+    $http.get('team.json').success(function(data) {
+      $scope.players = data;
+
+    });
+})
+
+ng-repeat="(key, player) in players"
+
+    <p>{{ player.name }}
+    {{ player.position }}
+    {{ player.nationality }}
+    {{ player.number }}
+    {{ player.status }}</p>
+-->
+

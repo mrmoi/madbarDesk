@@ -531,7 +531,35 @@ main {
 }
 
 
-
+/* PLAYERS AREA */
+.playersDiv {
+    
+}
+.logo {
+    height: 60px;
+}
+.playersDiv h2 {
+    
+}
+.playersDiv h5 {
+    
+}
+.playersDiv h3 {
+    
+    
+}
+.playersDiv div {
+    
+}
+.playersDiv img {
+    
+      
+}
+.playerCapsule {
+    background-color: aqua;
+    padding: 25px 5px 5px 5px;
+    border: 1px solid white;
+}
 
 
 
