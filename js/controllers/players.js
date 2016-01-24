@@ -1,5 +1,5 @@
-myApp.controller('PlayersController',['$scope','$rootScope','$firebaseAuth','$firebaseArray','FIREBASE_URL',
-function($scope, $rootScope, $firebaseAuth, $firebaseArray, FIREBASE_URL) {
+myApp.controller('PlayersController',['$scope','$rootScope','$firebaseAuth','$firebaseArray','FIREBASE_URL','$http',
+function($scope, $rootScope, $firebaseAuth, $firebaseArray, FIREBASE_URL, $http) {
 
     var ref = new Firebase(FIREBASE_URL);
     var auth = $firebaseAuth(ref);
@@ -17,7 +17,9 @@ function($scope, $rootScope, $firebaseAuth, $firebaseArray, FIREBASE_URL) {
            playersInfo.$watch(function(data) {
                $rootScope.howManyPlayers = playersInfo.length;
            }); //
-/*$rootScope.currentUser.$id */
+           
+
+           /*$rootScope.currentUser.$id */
            $scope.addPlayer = function() {
                playersInfo.$add({
                    name: $scope.playername,
@@ -41,4 +43,11 @@ function($scope, $rootScope, $firebaseAuth, $firebaseArray, FIREBASE_URL) {
 
        } // User Authenticated
     }); // on Auth
+    
+    
+           /* ADDED JSON FILE TO HOLD IMAGE ADDRESSES */
+           $http.get('team.json').success(function(data) {
+           $scope.playerImages = data;
+           });
+    
 }]); // Controller
