@@ -13,13 +13,13 @@
     
         <img ng-src="../img/{{ image.shortname }}.jpeg" alt="{{image.name}}">
         
-        <div class="caption">
+        <div class="caption" ng-show="(player.name === image.name && player.number === image.squadNumber)">
         <!-- SHOW NAME ONLY IF IMAGE NAME AND PLAYER NAME ARE THE SAME -->
-        <p ng-show="(player.name === image.name)">{{player.name}}</p>
-        <p ng-show="(player.position === image.position)">{{player.position}}</p>
-        <p ng-show="(player.nationality === image.nationality)">{{player.nationality}}</p>
-        <p ng-show="(player.name === image.squadNumber)">{{player.number}}</p>
-        <p ng-show="(player.status === image.status)">{{player.status}}</p>
+        <p>{{player.name}}</p>
+        <p>{{player.position}}</p>
+        <p>{{player.nationality}}</p>
+        <p>{{player.number}}</p>
+        <p>{{player.status}}</p>
         <p><a href="#" class="btn btn-primary hvr-pulse" role="button">Button</a></p>
         </div>
         </div>

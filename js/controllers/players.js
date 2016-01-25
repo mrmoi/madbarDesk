@@ -44,6 +44,9 @@ function($scope, $rootScope, $firebaseAuth, $firebaseArray, FIREBASE_URL, $http)
        } // User Authenticated
     }); // on Auth
     
+            var playersRef = new Firebase(FIREBASE_URL + '/players');
+            var playersInfo = $firebaseArray(playersRef);
+            $scope.players = playersInfo;       
     
            /* ADDED JSON FILE TO HOLD IMAGE ADDRESSES */
            $http.get('team.json').success(function(data) {
