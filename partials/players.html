@@ -13,7 +13,7 @@
     
         <img ng-src="../img/{{ image.shortname }}.jpeg" alt="{{image.name}}">
         
-        <div class="caption" ng-show="(player.name === image.name && player.number === image.squadNumber)">
+        <div class="caption" ng-show="(player.Indexof(name) === image.name)">
         <!-- SHOW NAME ONLY IF IMAGE NAME AND PLAYER NAME ARE THE SAME -->
         <p>{{player.name}}</p>
         <p>{{player.position}}</p>
