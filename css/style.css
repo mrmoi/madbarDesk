@@ -159,7 +159,8 @@ main {
   padding: 0px 20px 0px 20px;
 }
 .jumbotron {
-  background-image: url('../img/jumboPic.jpg');
+  background-image: url('../img/lpcTeamPic.jpeg');
+  background-position: center;
 }
 .jumbotron h1 {
   font-size: 4.7em;
