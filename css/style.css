@@ -159,28 +159,23 @@ main {
   padding: 0px 20px 0px 20px;
 }
 .jumbotron {
-  /*background-image: url('../img/lpcTeamPic.jpeg');*/
-  /*background-position: center;*/
-    margin-top: 5px;
-    
+  background-image: url('../img/jumboPic.jpg');
+  background-position: 10% 60%;
 }
-.jumbotron img {
-    max-height: 550px;
-}
+
 .jumbotron h1 {
   font-size: 4.7em;
   text-align: center;
   font-family: 'Kanit', sans-serif;
   font-weight: 900;
-  color:#1a237e;
-  text-shadow:2px 2px 0 lightblue, 4px 4px 0 cyan;
-   margin-top: 1px;
+  color:red;
+  text-shadow:2px 2px 0 white, 4px 4px 0 black;
 }
 .jumbotron h4 {
-  font-size: 2.1em;
+  font-size: 2.4em;
   text-align: center;
   font-family: 'Montez', monospace;
-  color: orange;
+  color: white;
   text-shadow: black 2px 2px 1px;
   font-weight: bold;
 }
