@@ -2,9 +2,9 @@
 @import url(https://fonts.googleapis.com/css?family=Vollkorn:400,700|Kanit:400,800);
 
 body {
-    /*background: #ECE9E6; /* fallback for old browsers */
-    /*background: -webkit-linear-gradient(to left, #ECE9E6 , #FFFFFF); /* Chrome 10-25, Safari 5.1-6 */
-    /*background: linear-gradient(to left, #ECE9E6 , #FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #ECE9E6; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #ECE9E6 , #FFFFFF); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #ECE9E6 , #FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
     /*background: #24C6DC; /* fallback for old browsers */
     /*background: -webkit-linear-gradient(to left, #24C6DC , #514A9D); /* Chrome 10-25, Safari 5.1-6 */
@@ -146,15 +146,7 @@ main {
 
 
 
-
-
-
-
-
-
-/* HISTORY TEMPLATE STYLES*/
-
-/* NEW HOME STYLES */
+/* JUMBOTRON */
 .jumboDiv{
   padding: 0px 20px 0px 20px;
 }
@@ -204,19 +196,19 @@ main {
   text-align: center;
   font-family: 'Kanit', sans-serif;
   font-weight: 900;
-  color: orange;
-  text-shadow:2px 2px 0 darkblue, 4px 4px 0 cyan;
+  color: red;
+  text-shadow:2px 2px 0 white, 4px 4px 0 black;
   margin-top: 5px;
   padding-bottom: 10px;
 }
 .leftDiv h5 {
-  font-size: 1.4em;
+  font-size: 1.3em;
   line-height: 1.4em;
   text-align: left;
-  font-family: 'Dosis', monospace;
+  font-family: 'Kanit', monospace;
   color: black;
-  text-shadow: 1px 1px 1px orange;
-  font-weight: bold;
+  /*text-shadow: 1px 1px 1px orange;*/
+  font-weight: 500;
   padding-top: 10px;
 }
 .centerDiv {
@@ -227,19 +219,19 @@ main {
   text-align: center;
   font-family: 'Kanit', sans-serif;
   font-weight: 900;
-  color: orange;
-  text-shadow:2px 2px 0 darkblue, 4px 4px 0 cyan;
+  color: red;
+  text-shadow:2px 2px 0 white, 4px 4px 0 black;
   margin-top: 5px;
     padding-bottom: 10px;
 }
 .centerDiv h5 {
-  font-size: 1.4em;
+  font-size: 1.3em;
   line-height: 1.4em;
   text-align: left;
-  font-family: 'Dosis', monospace;
+  font-family: 'Kanit', monospace;
   color: black;
-  text-shadow: 1px 1px 1px orange;
-  font-weight: bold;
+  /*text-shadow: 1px 1px 1px orange;*/
+  font-weight: 500;
   padding-top: 10px;
 }
 .rigthDiv {
@@ -250,19 +242,19 @@ main {
   text-align: center;
   font-family: 'Kanit', sans-serif;
   font-weight: 900;
-  color: orange;
-  text-shadow:2px 2px 0 darkblue, 4px 4px 0 cyan;
+  color: red;
+  text-shadow:2px 2px 0 white, 4px 4px 0 black;
   margin-top: 5px;
   padding-bottom: 10px;
 }
 .rightDiv h5 {
-  font-size: 1.4em;
+  font-size: 1.3em;
   line-height: 1.4em;
   text-align: left;
-  font-family: 'Dosis', monospace;
+  font-family: 'Kanit', monospace;
   color: black;
-  text-shadow: 1px 1px 1px orange;
-  font-weight: bold;
+  /*text-shadow: 1px 1px 1px orange;*/
+  font-weight: 500;
   padding-top: 10px;
 }
 .imgSize {
@@ -270,6 +262,8 @@ main {
     width: 220px;
     border-radius: 50%;
 }
+
+
 
 /* NEWS SECTION 3 */
 .newsDiv {
@@ -283,8 +277,8 @@ main {
   text-align: center;
   font-family: 'Kanit', sans-serif;
   font-weight: 900;
-  color: #1a237e;
-  text-shadow:2px 2px 0 lightblue, 4px 4px 0 cyan;
+  color: red;
+  text-shadow:2px 2px 0 white, 4px 4px 0 black;
   margin-top: 20px;
   padding-bottom: 5px;
 }
@@ -293,9 +287,9 @@ main {
 }
 .list-group-item {
     background-color: #1a237e;
-    font-family: 'Dosis', monospace;
-    font-size: 1.4em;
-    font-weight: bold;
+    font-family: 'Kanit', monospace;
+    font-size: 1.3em;
+    font-weight: 500;
     color: black;
 }
 .newsHeadline {
@@ -309,13 +303,8 @@ main {
     background: #ECE9E6; /* fallback for old browsers */
     /*background: -webkit-linear-gradient(to left, #ECE9E6 , #FFFFFF); /* Chrome 10-25, Safari 5.1-6 */
     /*background: linear-gradient(to left, #ECE9E6 , #FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
-    background: #8e9eab; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #8e9eab , #eef2f3); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #8e9eab , #eef2f3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
-    border-radius: 25px;
-    border: 1px solid white;
+    /*border-radius: 25px;
+    border: 2px solid black;*/
 }
 /* RIGHT AREA */
 .row2right {
@@ -326,22 +315,23 @@ main {
   text-align: center;
   font-family: 'Kanit', sans-serif;
   font-weight: 900;
-  color: orange;
-  text-shadow:2px 2px 0 darkblue, 4px 4px 0 cyan;
+  color: red;
+  text-shadow:2px 2px 0 white, 4px 4px 0 black;
   margin-top: 5px;
+  margin-bottom: 15px
 }
 .row2right h5 {
     
 }
 .row2right p {
-  font-size: 1.4em;
-  line-height: 1.2em;
+  font-size: 1.3em;
+  line-height: 1.3em;
   text-align: center;
-  font-family: 'Dosis', monospace;
+  font-family: 'Kanit', monospace;
   color: black;
-  text-shadow: 1px 1px 1px orange;
-  font-weight: bold;
-  padding-top: 5px;
+  /*text-shadow: 1px 1px 1px orange;*/
+  font-weight: 500;
+  padding-top: 15px;
 }
 /* LEFT AREA */
 .row2left {
@@ -352,8 +342,8 @@ main {
   text-align: center;
   font-family: 'Kanit', sans-serif;
   font-weight: 900;
-  color: orange;
-  text-shadow:2px 2px 0 darkblue, 4px 4px 0 cyan;
+  color: red;
+  text-shadow:2px 2px 0 white, 4px 4px 0 black;
   margin-top: 5px;
 }
 .row2left h5 {
@@ -363,15 +353,25 @@ main {
     color: black;
     text-shadow: 1px 1px 1px darkgray;
 }
-.row2left p {
-  font-size: 1.4em;
-  line-height: 1.2em;
+.playerComment {
+  font-size: 1.3em;
+  line-height: 1.3em;
   text-align: center;
-  font-family: 'Dosis', monospace;
+  font-family: 'Kanit', monospace;
   color: black;
-  text-shadow: 1px 1px 1px orange;
-  font-weight: bold;
+  /*text-shadow: 1px 1px 1px orange;*/
+  font-weight: 500;
   padding-top: 5px;
+}
+
+.playerInfo {
+  font-size: 1.1em;
+  line-height: 1.3em;
+  text-align: center;
+  font-family: 'Kanit', monospace;
+  color: blue;
+  /*text-shadow: 1px 1px 1px orange;*/
+  font-weight: 300;
 }
 
 .footer {

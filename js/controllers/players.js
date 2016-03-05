@@ -7,9 +7,14 @@ function($scope, $rootScope, $firebaseAuth, $firebaseArray, FIREBASE_URL, $http)
     auth.$onAuth(function(authUser) {
        if(authUser) {
            var playersRef = new Firebase(FIREBASE_URL + '/players');
+           var headlineRef = new Firebase(FIREBASE_URL + '/headline');
+           
            var playersInfo = $firebaseArray(playersRef);
+           var headlineInfo = $firebaseArray(headlineRef);
+           
            $scope.players = playersInfo;
-
+           $scope.headlines = headlineInfo;
+           
            playersInfo.$loaded().then(function(data) {
                $rootScope.howManyPlayers = playersInfo.length;
            }); //
@@ -36,17 +41,33 @@ function($scope, $rootScope, $firebaseAuth, $firebaseArray, FIREBASE_URL, $http)
                    $scope.playerstatus='';
                }); //promise
            }; // addMeeting
-
+           
+        
            $scope.deletePlayer = function(key) {
                playersInfo.$remove(key);
            }; // deleteMeeting
+           
+           $scope.addHeadline = function() {
+           headlineInfo.$add({
+                name: $scope.headlineName,
+                content: $scope.headlineContent
+           }).then(function() {
+                $scope.headlineName='';
+                $scope.headlineContent='';
+           });
+           };
 
        } // User Authenticated
     }); // on Auth
     
             var playersRef = new Firebase(FIREBASE_URL + '/players');
             var playersInfo = $firebaseArray(playersRef);
-            $scope.players = playersInfo;       
+            $scope.players = playersInfo;
+    
+            var headlineRef = new Firebase(FIREBASE_URL + '/headline');
+            var headlineInfo = $firebaseArray(headlineRef);
+            $scope.headlines = headlineInfo;
+    
     
            /* ADDED JSON FILE TO HOLD IMAGE ADDRESSES */
            $http.get('team.json').success(function(data) {

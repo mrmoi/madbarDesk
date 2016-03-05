@@ -45,11 +45,29 @@
     <button type="submit" class="btn"
             ng-disabled="myform.$invalid">+</button>
     </form>
-
-
   </div>
 </div>
+      
+<!-- THIS WILL BE THE HOME NEWS CONTROL SECTION -->
+    <p>Add news to the home page</p>
+    <p>Type your headline here</p>  
 
+    <form class="formgroup addmeeting cf"
+          name="myform"
+          ng-submit="addHeadline()"
+          novalidate>
+
+    <div class="inputwrapper">
+    <input type="text" name="headline"
+           placeholder="Type headline"
+           ng-model="headlineName" ng-required="true">
+    </div>
+
+    <button type="submit" class="btn"
+            ng-disabled="myform.$invalid">+</button>
+    </form>
+      
+      
 <div class="col-xs-1 col-sm-3 col-md-4 col-lg-4">
 
   <p>Your Players</p>
@@ -59,6 +77,11 @@
     {{ player.nationality }}
     {{ player.number }}
     {{ player.status }}</p>
+  </div>
+    
+      <p>Your Headlines</p>
+  <div class="homeDiv" ng-repeat="(key, headline) in headlines">
+    <p>{{ headline.name }}</p>
   </div>
 
 </div>
