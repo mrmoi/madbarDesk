@@ -7,7 +7,7 @@ function($scope, $rootScope, $firebaseAuth, $firebaseArray, FIREBASE_URL, $http)
     auth.$onAuth(function(authUser) {
        if(authUser) {
            var playersRef = new Firebase(FIREBASE_URL + '/players');
-           var headlineRef = new Firebase(FIREBASE_URL + '/headline');
+           var headlineRef = new Firebase(FIREBASE_URL + '/headlines');
            
            var playersInfo = $firebaseArray(playersRef);
            var headlineInfo = $firebaseArray(headlineRef);
@@ -47,13 +47,15 @@ function($scope, $rootScope, $firebaseAuth, $firebaseArray, FIREBASE_URL, $http)
                playersInfo.$remove(key);
            }; // deleteMeeting
            
+           
+           
            $scope.addHeadline = function() {
            headlineInfo.$add({
-                name: $scope.headlineName,
-                content: $scope.headlineContent
+                name: $scope.headlineName
+                /*content: $scope.headlineContent*/
            }).then(function() {
                 $scope.headlineName='';
-                $scope.headlineContent='';
+                /*$scope.headlineContent='';*/
            });
            };
 
@@ -64,9 +66,9 @@ function($scope, $rootScope, $firebaseAuth, $firebaseArray, FIREBASE_URL, $http)
             var playersInfo = $firebaseArray(playersRef);
             $scope.players = playersInfo;
     
-            var headlineRef = new Firebase(FIREBASE_URL + '/headline');
+            /*var headlineRef = new Firebase(FIREBASE_URL + '/headline');
             var headlineInfo = $firebaseArray(headlineRef);
-            $scope.headlines = headlineInfo;
+            $scope.headlines = headlineInfo;*/
     
     
            /* ADDED JSON FILE TO HOLD IMAGE ADDRESSES */
