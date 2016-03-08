@@ -13,12 +13,12 @@ myApp.run(['$rootScope','$location',
       });
 }]);
 
-
+/* APPLICATIONS ROUTING CODE */
 myApp.config(['$routeProvider', function($routeProvider) {
     $routeProvider.
         when('/home', {
           templateUrl: 'partials/home.html',
-          //controller: 'RegistrationController'
+          controller: 'PlayersController'
         }).
         when('/login', {
         templateUrl: 'partials/login.html',

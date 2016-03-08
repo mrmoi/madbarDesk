@@ -39,16 +39,29 @@
 <img src="img/teamLogo.png" alt="team logo" class="pull-left"></img>
     <h2>Latest News</h2>   
 <div class="list-group newsGroup">
-  <button type="button" class="list-group-item"><span class="newsHeadline">MadBar FC welcomes a new player!</span></button>
-  <button type="button" class="list-group-item"><span class="newsHeadline">MadBar FC Headlines</span></button>
-  <button type="button" class="list-group-item"><span class="newsHeadline">MadBar FC Headlines</span></button>
-  <button type="button" class="list-group-item"><span class="newsHeadline">MadBar FC Headlines</span></button>
-  <button type="button" class="list-group-item"><span class="newsHeadline">MadBar FC Headlines</span></button>
+  <button type="button" class="list-group-item" ng-repeat="(key, headline) in headlines"><span class="newsHeadline">{{ headline.name }}</span></button
 </div>
  
 </div>
 </div>
 
+<!-- 
+      <p>Your Headlines</p>
+      <h4>Headlines should appear here</h4>
+  <div class="homeDiv" ng-repeat="(key, headline) in headlines">
+    <p>{{ headline.name }}</p>
+      
+      
+          <p><b>Your Players</b></p>
+  <div class="homeDiv" ng-repeat="(key, player) in players">
+    <p>{{ player.name }}
+    {{ player.position }}
+    {{ player.nationality }}
+    {{ player.number }}
+    {{ player.status }}</p>
+  </div>
+
+-->
 <!-- FOURTH SECTION  -->
 <div class="row fourthRow">
     <div class="col-xs-6 col-md-6 row2left">
