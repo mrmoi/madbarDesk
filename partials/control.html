@@ -1,8 +1,12 @@
-<div class="container-fluid greenBackground">
+<div class="container-fluid">
   <div class="row">
-    <div class="col-xs-1 col-sm-3 col-md-4 col-lg-4"></div>
+    <h3>MadBar Menu</h3>
+      <p>Using this menu the user will be able to make any changes to the various pages within the
+         madbar united website. Some of the changes will impact the database for example adding and removing 
+         players and adding new headlines.</p>
+      
     <div class="col-xs-10 col-sm-6 col-md-4 col-lg-4">
-      <div class="container-fluid homeDiv">
+      <div class="container-fluid">
 
     <p>Add a player</p>
     <p>Type a player's name and hit +</p>
@@ -50,13 +54,19 @@
       
 <!-- THIS WILL BE THE HOME NEWS CONTROL SECTION -->
     <p>Add news to the home page</p>
-    <p>Type your headline here</p>  
+    <p>Type your headline title</p>  
 
     <form class="formgroup addmeeting cf"
           name="myform"
           ng-submit="addHeadline()"
           novalidate>
 
+    <div class="inputwrapper">
+    <input type="text" name="headlineTitle"
+           placeholder="Type headline title"
+           ng-model="headlineTitle" ng-required="true">
+    </div>
+        
     <div class="inputwrapper">
     <input type="text" name="headline"
            placeholder="Type headline"
@@ -82,6 +92,7 @@
       <p>Your Headlines</p>
       <h4>Headlines should appear here</h4>
   <div class="homeDiv" ng-repeat="(key, headline) in headlines">
+    <p>{{ headline.title }}</p>
     <p>{{ headline.name }}</p>
   </div>
     
