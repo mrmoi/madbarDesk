@@ -1,108 +1,103 @@
 <div class="container-fluid">
-  <div class="row">
-    <h3>MadBar Menu</h3>
-      <p>Using this menu the user will be able to make any changes to the various pages within the
+<div class="row">
+<div class="col-lg-8 col-md-offset-2">
+<h3>MadBar Menu</h3>
+<br>
+<p>Using this menu the user will be able to make any changes to the various pages within the
          madbar united website. Some of the changes will impact the database for example adding and removing 
          players and adding new headlines.</p>
-      
-    <div class="col-xs-10 col-sm-6 col-md-4 col-lg-4">
-      <div class="container-fluid">
-
-    <p>Add a player</p>
-    <p>Type a player's name and hit +</p>
-
-    <form class="formgroup addmeeting cf"
+<br>
+        <!-- DISPLAY FORMS ON 1 SIDE AND INFORMATION ON THE OTHER -->  
+          <!-- right info -->
+<div class="col-sm-6">
+<div>
+<div class="container-fluid">
+<h4>Add a player</h4>
+<h5>Type a player's information</h5>
+<form class="formgroup addmeeting cf"
           name="myform"
           ng-submit="addPlayer()"
           novalidate>
-
-    <div class="inputwrapper">
-    <input type="text" name="playername"
+<div class="inputwrapper">
+<input type="text" name="playername"
            placeholder="Player name"
            ng-model="playername" ng-required="true">
-    </div>
-
-    <div class="inputwrapper">
-    <input type="text" name="playerposition"
+</div>
+<div class="inputwrapper">
+<input type="text" name="playerposition"
            placeholder="Player position"
            ng-model="playerposition" ng-required="true">
-    </div>
-
-    <div class="inputwrapper">
-    <input type="text" name="playernationality"
+</div>
+<div class="inputwrapper">
+<input type="text" name="playernationality"
            placeholder="Player nationality"
            ng-model="playernationality" ng-required="true">
-    </div>
-
-    <div class="inputwrapper">
-    <input type="text" name="playernumber"
+</div>
+<div class="inputwrapper">
+<input type="text" name="playernumber"
            placeholder="Player number"
            ng-model="playernumber" ng-required="true">
-    </div>
-
-    <div class="inputwrapper">
+</div>
+<div class="inputwrapper">
     <input type="text" name="playerstatus"
            placeholder="Player status"
            ng-model="playerstatus" ng-required="true">
-    </div>
-
-    <button type="submit" class="btn"
-            ng-disabled="myform.$invalid">+</button>
-    </form>
-  </div>
 </div>
-      
-<!-- THIS WILL BE THE HOME NEWS CONTROL SECTION -->
-    <p>Add news to the home page</p>
-    <p>Type your headline title</p>  
-
-    <form class="formgroup addmeeting cf"
-          name="myform"
-          ng-submit="addHeadline()"
-          novalidate>
-
-    <div class="inputwrapper">
-    <input type="text" name="headlineTitle"
-           placeholder="Type headline title"
-           ng-model="headlineTitle" ng-required="true">
-    </div>
-        
-    <div class="inputwrapper">
-    <input type="text" name="headline"
-           placeholder="Type headline"
-           ng-model="headlineName" ng-required="true">
-    </div>
-
-    <button type="submit" class="btn"
-            ng-disabled="myform.$invalid">+</button>
-    </form>
-      
-      
-<div class="col-xs-1 col-sm-3 col-md-4 col-lg-4">
-
-    <p><b>Your Players</b></p>
-  <div class="homeDiv" ng-repeat="(key, player) in players">
-    <p>{{ player.name }}
-    {{ player.position }}
-    {{ player.nationality }}
-    {{ player.number }}
-    {{ player.status }}</p>
-  </div>
-    
-      <p>Your Headlines</p>
-      <h4>Headlines should appear here</h4>
-  <div class="homeDiv" ng-repeat="(key, headline) in headlines">
-    <p>{{ headline.title }}</p>
-    <p>{{ headline.name }}</p>
-  </div>
-    
-    
-    
-    
 <br>
-    <br>
-    <br>
+<button type="submit" class="btn btn-lg hvr-pulse" ng-disabled="myform.$invalid">Add Player</button>
+</form>
 </div>
+</div>
+                
+<!-- THIS WILL BE THE HOME NEWS CONTROL SECTION -->
+<br>
+<h4>Add news to the home page</h4>
+<h5>Type your headline title</h5>  
 
+<form class=""
+      name="myform"
+      ng-submit="addHeadline()"
+      novalidate>
+<div class="inputwrapper">
+<input type="text" name="headlineTitle"
+       placeholder="Type headline title"
+       ng-model="headlineTitle" ng-required="true">
+</div>
+        
+<div class="inputwrapper">
+<input type="text" name="headline"
+       placeholder="Type headline"
+       ng-model="headlineName" ng-required="true">
+</div>
+<br>
+<button type="submit" class="btn btn-lg hvr-pulse" ng-disabled="myform.$invalid">Add Headline</button>
+</form>      
+          
+</div>
+<!-- left info -->
+          
+<div class="col-sm-6">           
+<h4>MadBar United Players</h4>
+ <div class="homeDiv" ng-repeat="(key, player) in players">
+<p>
+{{ player.name }}
+{{ player.position }}
+{{ player.nationality }}
+{{ player.number }}
+{{ player.status }}
+</p>
+</div>
+              
+<h4>MadBar United Headlines</h4>
+<h5>Headlines should appear here</h5>
+<div class="homeDiv" ng-repeat="(key, headline) in headlines">
+<p>
+{{ headline.title }}
+{{ headline.name }}
+</p>
 </div>
 </div>
+   
+</div><!--col-lg-8 col-md-offset-2-->
+</div><!-- 1st row -->
+</div><!-- 1st container fluid -->

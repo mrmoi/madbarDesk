@@ -7,7 +7,7 @@
       <h5>Players</h5> 
       <div class="row">
           
-        <div ng-repeat="image in playerImages">
+        <!--<div ng-repeat="image in playerImages">
         <div class="col-sm-3 col-md-4" ng-repeat="(key, player) in players">
         <div class="thumbnail playerCapsule">
     
@@ -15,7 +15,7 @@
         
         <div class="caption" ng-show="(player.Indexof(name) === image.name)">
         <!-- SHOW NAME ONLY IF IMAGE NAME AND PLAYER NAME ARE THE SAME -->
-        <p>{{player.name}}</p>
+        <!--<p>{{player.name}}</p>
         <p>{{player.position}}</p>
         <p>{{player.nationality}}</p>
         <p>{{player.number}}</p>
@@ -24,7 +24,17 @@
         </div>
         </div>
         </div>
-          </div>
+          </div>-->
+          
+<div class="homeDiv" ng-repeat="(key, player) in players">
+<p>
+{{ player.name }}
+{{ player.position }}
+{{ player.nationality }}
+{{ player.number }}
+{{ player.status }}
+</p>
+</div>
 
           
       </div>
