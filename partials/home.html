@@ -1,88 +1,91 @@
 <div class="container-fluid">
 <!-- first section JUMBOTRON -->
-  <div class="row">
-    <div class="jumboDiv">
-      <div class="jumbotron">
-        <h1 class="expandOpen">MadBar United</h1>
-        <h4>Amateur Soccer Team</h4>
-          <!--<img src="../img/lpcTeamPic.jpeg" class="img-responsive" alt="Responsive image">-->
-      </div>  
-    </div>
-  </div>
+<div class="row">
+<div class="jumboDiv">
+<div class="jumbotron">
+  <h1 class="expandOpen">MadBar United FC</h1>
+  <h4>Amateur Soccer Team</h4>
+    <!--<img src="../img/lpcTeamPic.jpeg" class="img-responsive" alt="Responsive image">-->
+</div>  
+</div>
+</div>
 
 <!-- second section -->
 <div class="row secondRow">   
-  <div class="col-sm-4 col-md-4 leftDiv">
-    <h2>Diversity</h2>
-      <img src="img/diversity.jpg" alt="" class="imgSize center-block "></img>
-      <h5>MadBar FC has the advantage to have an amazingly diversed roster, containing players from
-          all five continents.
-      </h5>
-  </div>
-  <div class="col-sm-4 col-md-4 centerDiv">
-    <h2>Friendship</h2>
-      <img src="img/picFour.jpg" alt="" class="imgSize center-block "></img>
-      <h5>MadBar's number one quality lies in the friendship and team environment that make it one of the most
-          succesful teams.
-      </h5>
-  </div>
-  <div class="col-sm-4 col-md-4 rightDiv">
-      <h2>Passion</h2>
-      <img src="img/passion.jpg" alt="" class="imgSize center-block "></img>
-      <h5>MadBar's players are passionate about soccer. They live for the kink of sports.</h5>
-  </div>
+<div class="col-sm-4 col-md-4 innerDiv">
+  <h2>Diversity</h2>
+    <img src="img/diversity.jpg" alt="" class="imgSize center-block "></img>
+    <h5>MadBar FC has the advantage to have an amazingly diversed roster, containing players from
+        all five continents.
+    </h5>
 </div>
+<div class="col-sm-4 col-md-4 innerDiv">
+  <h2>Friendship</h2>
+    <img src="img/picFour.jpg" alt="" class="imgSize center-block "></img>
+    <h5>MadBar's number one quality lies in the friendship and team environment that make it one of the most
+        succesful teams.
+    </h5>
+</div>
+<div class="col-sm-4 col-md-4 innerDiv">
+    <h2>Passion</h2>
+    <img src="img/passion.jpg" alt="" class="imgSize center-block "></img>
+    <h5>MadBar's players are passionate about soccer. They live for the kink of sports.</h5>
+</div>
+</div><!-- second section end -->
 
 <!--THIRD SECTION NEWS DIV --> 
 <div class="row newsDiv">
 <div class="col-md-6 col-md-offset-3">
 <img src="img/teamLogo.png" alt="team logo" class="pull-left"></img>
-    <h2>Latest News</h2>   
+<h2>Latest News</h2>   
 <div class="list-group newsGroup">
-  <button type="button" class="list-group-item" ng-repeat="(key, headline) in headlines"><span class="newsHeadline">{{ headline.name }}</span></button
+  <button type="button" class="list-group-item" 
+          ng-repeat="(key, headline) in headlines">
+      <p>
+          <span class="newsHeadline">{{ headline.name }}</span>
+          <span class="newsHeadline pull-right">{{ headline.date | date : format : timezone }}</span>
+      </p>
+      <p>
+          <span class="newsHeadline">{{ headline.content }}</span>
+      </p>
+  </button>
 </div>
- 
 </div>
-</div>
+</div><!-- third section end -->
 
-<!-- 
-      <p>Your Headlines</p>
-      <h4>Headlines should appear here</h4>
-  <div class="homeDiv" ng-repeat="(key, headline) in headlines">
-    <p>{{ headline.name }}</p>
-      
-      
-          <p><b>Your Players</b></p>
-  <div class="homeDiv" ng-repeat="(key, player) in players">
-    <p>{{ player.name }}
-    {{ player.position }}
-    {{ player.nationality }}
-    {{ player.number }}
-    {{ player.status }}</p>
-  </div>
-
--->
 <!-- FOURTH SECTION  -->
 <div class="row fourthRow">
-    <div class="col-xs-6 col-md-6 row2left">
-        <h2>Player of the Week</h2>
-        <img src="../img/luis_marquez.jpeg" id="playerImage" alt="Jesus Ibarra" class="img-thumbnail center-block"></img>
-        <p class="playerInfo">Luis Marquez<br>
-           Forward</p>
-        
-        <p class="playerComment">His efforts helped the team tie a very complicated game.</p>
-      </div>
+<div class="col-md-4 innerFourthRow">
+<h2>Player of the Week</h2>
+<img src="../img/luis_marquez.jpeg" id="playerImage" alt="Jesus Ibarra" class="img-thumbnail center-block"></img>
+    
+    
+        <p ng-repeat="(key, pow) in pows">
+            {{ pow.name }}<br>
+            {{ pow.position }}<br>
+            {{ pow.comment }}<br>
+        </p>
+</div>     
+    
+<div class="col-md-4 innerFourthRow"><!-- change to row center-->
+<h2>Official Channel</h2>
+<a ng-href="https://www.youtube.com/channel/UCn0XNFqXi_p-foVq6gJtE9Q">
+<img src="../img/futbol_ardiente.jpg" class="img-thumbnail center-block" alt="Futbol Ardiente"></img></a>
+<p>Futbol Ardiente<br>
+   Director: German Gutierrez<br>
+   Production: German Productions ltd.
+</p>
+</div>
 
-    <div class="col-xs-6 col-md-6 row2right">
-        <h2>Official Sponsor</h2>
-        <img src="../img/euro_pizza_logo.png" id="playerImage" alt="Jesus Ibarra" class="img-thumbnail center-block"></img>
-        <p>(480) 836-0207<br>
-        Sunday-Saturday | 7:30a.m. - 9:00p.m.<br> 
-        12645 N Saguaro Blvd #11 Fountain Hills, AZ 85268
-        <a ng-href="http://www.europizzacafe.com/">europizzacafe.com</a></p>
+<div class="col-md-4 innerFourthRow">
+<h2>Official Sponsor</h2>
+<img src="../img/euro_pizza_logo.png" id="playerImage" alt="Jesus Ibarra" class="img-thumbnail center-block"></img>
+<p>(480) 836-0207<br>
+    Sunday-Saturday | 7:30a.m. - 9:00p.m.<br> 
+    12645 N Saguaro Blvd #11 Fountain Hills, AZ 85268
+<a ng-href="http://www.europizzacafe.com/">europizzacafe.com</a></p>
 </div>
-</div>
-
-</div>
+</div><!-- fourth row-->
+</div><!-- container fluid -->
 
 

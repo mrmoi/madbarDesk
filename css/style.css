@@ -145,7 +145,7 @@ main {
 */
 
 
-
+/* -------------------------------------   HOME STYLES PAGE  -----------------------------------------*/ 
 /* JUMBOTRON */
 .jumboDiv{
   padding: 0px 20px 0px 20px;
@@ -188,10 +188,10 @@ main {
     padding-top: 25px;
     padding-bottom: 25px;    
 }
-.leftDiv {
-  text-align: left;
+.innerDiv {
+    text-align: center;
 }
-.leftDiv h2 {
+.innerDiv h2 {
   font-size: 2.2em;
   text-align: center;
   font-family: 'Kanit', sans-serif;
@@ -201,53 +201,7 @@ main {
   margin-top: 5px;
   padding-bottom: 10px;
 }
-.leftDiv h5 {
-  font-size: 1.3em;
-  line-height: 1.4em;
-  text-align: left;
-  font-family: 'Kanit', monospace;
-  color: black;
-  /*text-shadow: 1px 1px 1px orange;*/
-  font-weight: 500;
-  padding-top: 10px;
-}
-.centerDiv {
-    text-align: center;
-}
-.centerDiv h2 {
-  font-size: 2.2em;
-  text-align: center;
-  font-family: 'Kanit', sans-serif;
-  font-weight: 900;
-  color: red;
-  text-shadow:2px 2px 0 white, 4px 4px 0 black;
-  margin-top: 5px;
-    padding-bottom: 10px;
-}
-.centerDiv h5 {
-  font-size: 1.3em;
-  line-height: 1.4em;
-  text-align: left;
-  font-family: 'Kanit', monospace;
-  color: black;
-  /*text-shadow: 1px 1px 1px orange;*/
-  font-weight: 500;
-  padding-top: 10px;
-}
-.rigthDiv {
-    text-align: center;
-}
-.rightDiv h2 {
-  font-size: 2.2em;
-  text-align: center;
-  font-family: 'Kanit', sans-serif;
-  font-weight: 900;
-  color: red;
-  text-shadow:2px 2px 0 white, 4px 4px 0 black;
-  margin-top: 5px;
-  padding-bottom: 10px;
-}
-.rightDiv h5 {
+.innerDiv h5 {
   font-size: 1.3em;
   line-height: 1.4em;
   text-align: left;
@@ -259,10 +213,10 @@ main {
 }
 .imgSize {
     height: 200px;
-    width: 220px;
+    width: 200px;
     border-radius: 50%;
 }
-
+/* second section end */
 
 
 /* NEWS SECTION 3 */
@@ -299,18 +253,13 @@ main {
 
 /* SECTION 4 */
 .fourthRow {
-    /*
-    background: #ECE9E6; /* fallback for old browsers */
-    /*background: -webkit-linear-gradient(to left, #ECE9E6 , #FFFFFF); /* Chrome 10-25, Safari 5.1-6 */
-    /*background: linear-gradient(to left, #ECE9E6 , #FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    /*border-radius: 25px;
-    border: 2px solid black;*/
+
 }
 /* RIGHT AREA */
-.row2right {
+.innerFourthRow{
     margin: 5px 0px 5px 0px;
 }
-.row2right h2 {
+.innerFourthRow h2{
   font-size: 1.9em;
   text-align: center;
   font-family: 'Kanit', sans-serif;
@@ -320,10 +269,7 @@ main {
   margin-top: 5px;
   margin-bottom: 15px
 }
-.row2right h5 {
-    
-}
-.row2right p {
+.innerFourthRow p {
   font-size: 1.3em;
   line-height: 1.3em;
   text-align: center;
@@ -333,47 +279,10 @@ main {
   font-weight: 500;
   padding-top: 15px;
 }
-/* LEFT AREA */
-.row2left {
-    margin: 5px 0px 5px 0px;
-}
-.row2left h2 {
-  font-size: 1.9em;
-  text-align: center;
-  font-family: 'Kanit', sans-serif;
-  font-weight: 900;
-  color: red;
-  text-shadow:2px 2px 0 white, 4px 4px 0 black;
-  margin-top: 5px;
-}
-.row2left h5 {
-    font-size: 1.1em;
-    text-align: center;
-    font-family: 'Roboto', monospace;
-    color: black;
-    text-shadow: 1px 1px 1px darkgray;
-}
-.playerComment {
-  font-size: 1.3em;
-  line-height: 1.3em;
-  text-align: center;
-  font-family: 'Kanit', monospace;
-  color: black;
-  /*text-shadow: 1px 1px 1px orange;*/
-  font-weight: 500;
-  padding-top: 5px;
-}
 
-.playerInfo {
-  font-size: 1.1em;
-  line-height: 1.3em;
-  text-align: center;
-  font-family: 'Kanit', monospace;
-  color: blue;
-  /*text-shadow: 1px 1px 1px orange;*/
-  font-weight: 300;
-}
+/* FOURTH ROW AREA END */
 
+/* FOOTER STYLES BEGIN */
 .footer {
     height: 70px;
     background-color: black;
@@ -390,6 +299,17 @@ main {
     height: 55px;
     margin-top: 5px; 
 }
+
+/* FOOTER STYLES END */
+/* ---------------------------- HOME PAGE STYLES -------------------------------------------------*/
+
+
+
+
+
+
+
+
 
 /* NEWS PAGE STYLES */
 .newsSection {

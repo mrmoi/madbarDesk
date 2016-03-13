@@ -1,23 +1,24 @@
 <div class="container-fluid">
 <div class="row">
 <div class="col-lg-8 col-md-offset-2">
-<h3>MadBar Menu</h3>
+<h3>MadBar United Menu</h3>
 <br>
 <p>Using this menu the user will be able to make any changes to the various pages within the
          madbar united website. Some of the changes will impact the database for example adding and removing 
          players and adding new headlines.</p>
 <br>
         <!-- DISPLAY FORMS ON 1 SIDE AND INFORMATION ON THE OTHER -->  
-          <!-- right info -->
+<!-- left side info -->
 <div class="col-sm-6">
 <div>
 <div class="container-fluid">
 <h4>Add a player</h4>
-<h5>Type a player's information</h5>
-<form class="formgroup addmeeting cf"
-          name="myform"
-          ng-submit="addPlayer()"
-          novalidate>
+<h5>Please enter player information</h5>
+<form class=""
+      name="myform"
+      ng-submit="addPlayer()"
+      novalidate>
+    
 <div class="inputwrapper">
 <input type="text" name="playername"
            placeholder="Player name"
@@ -50,35 +51,64 @@
 </div>
                 
 <!-- THIS WILL BE THE HOME NEWS CONTROL SECTION -->
-<br>
 <h4>Add news to the home page</h4>
 <h5>Type your headline title</h5>  
-
 <form class=""
       name="myform"
       ng-submit="addHeadline()"
       novalidate>
 <div class="inputwrapper">
-<input type="text" name="headlineTitle"
-       placeholder="Type headline title"
-       ng-model="headlineTitle" ng-required="true">
-</div>
-        
-<div class="inputwrapper">
-<input type="text" name="headline"
-       placeholder="Type headline"
+<input type="text" name="headlineName"
+       placeholder="Type your headline name"
        ng-model="headlineName" ng-required="true">
+</div>        
+<div class="inputwrapper">
+<input type="text" name="headlineContent"
+       placeholder="Type headline content"
+       ng-model="headlineContent" ng-required="false">
 </div>
-<br>
 <button type="submit" class="btn btn-lg hvr-pulse" ng-disabled="myform.$invalid">Add Headline</button>
-</form>      
+</form>
+    
+<h4>Add player of the week</h4>
+<h5>Type your pow title</h5>  
+<form class=""
+      name="myform"
+      ng-submit="addPow()"
+      novalidate>
+<div class="inputwrapper">
+<input type="text" name="powName"
+       placeholder="Type your pow name"
+       ng-model="powName" ng-required="true">
+</div> 
+    
+<div class="inputwrapper">
+<input type="text" name="powPosition"
+       placeholder="Type pow position"
+       ng-model="powPosition" ng-required="false">
+</div>
+    
+<div class="inputwrapper">
+<input type="text" name="powComment"
+       placeholder="Type pow comment"
+       ng-model="powComment" ng-required="false">
+</div>
+    
+<button type="submit" class="btn btn-lg hvr-pulse" ng-disabled="myform.$invalid">Add Player of the Week</button>
+</form> 
+    
+<form name="myform" ng-submit="addImage()">
+<input type="text" name="imageName" ng-model="imageName">
+<button type="submit" class="btn btn-lg hvr-pulse" ng-disabled="myform.$invalid">Add Picture</button>    
+</form> 
+    
           
 </div>
-<!-- left info -->
+<!-- right side info -->
           
 <div class="col-sm-6">           
 <h4>MadBar United Players</h4>
- <div class="homeDiv" ng-repeat="(key, player) in players">
+<div class="homeDiv" ng-repeat="(key, player) in players">
 <p>
 {{ player.name }}
 {{ player.position }}
@@ -92,12 +122,37 @@
 <h5>Headlines should appear here</h5>
 <div class="homeDiv" ng-repeat="(key, headline) in headlines">
 <p>
-{{ headline.title }}
 {{ headline.name }}
+{{ headline.content }}
+{{ headline.date | date : format : timezone }}
+</p>
+</div>
+</div>
+    
+    
+<h4>MadBar United Player of the Week</h4>
+<h5>Player should appear here</h5>
+<div class="homeDiv" ng-repeat="(key, pow) in pows">
+<p>
+{{ pow.name }}
+{{ pow.position }}
+{{ pow.comment }}
 </p>
 </div>
 </div>
    
+    
+<h4>MadBar United Images</h4>
+<h5>Images should appear here</h5>
+<div class="homeDiv" ng-repeat="(key, image) in images">
+<p>
+<img src="{{ image.name }}">
+</p>
+</div>
+</div>
+    
+ 
+</div>
 </div><!--col-lg-8 col-md-offset-2-->
 </div><!-- 1st row -->
 </div><!-- 1st container fluid -->

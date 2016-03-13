@@ -1,4 +1,4 @@
-myApp.controller('PlayersController',['$scope','$rootScope','$firebaseAuth','$firebaseArray','FIREBASE_URL','$http',
+myApp.controller('PowController',['$scope','$rootScope','$firebaseAuth','$firebaseArray','FIREBASE_URL','$http',
 function($scope, $rootScope, $firebaseAuth, $firebaseArray, FIREBASE_URL, $http) {
 
     var ref = new Firebase(FIREBASE_URL);
@@ -11,15 +11,25 @@ function($scope, $rootScope, $firebaseAuth, $firebaseArray, FIREBASE_URL, $http)
            var headlineRef = new Firebase(FIREBASE_URL + '/headlines');
            var imagesRef = new Firebase(FIREBASE_URL + '/images');
            
+           var powRef = new Firebase(FIREBASE_URL + 'pow');
+           
+           
+           
+           
            /* create a variable for the firebase array */
            var playersInfo = $firebaseArray(playersRef);
            var headlineInfo = $firebaseArray(headlineRef);
            var imagesInfo = $firebaseArray(imagesRef);
            
+           var powInfo = $firebaseArray(powRef);
+           
+           
            /* link scope to the array variable */
            $scope.players = playersInfo;
            $scope.headlines = headlineInfo;
            $scope.images = imagesInfo;
+           
+           $scope.pow = powInfo;
            
            
            playersInfo.$loaded().then(function(data) {
@@ -53,6 +63,28 @@ function($scope, $rootScope, $firebaseAuth, $firebaseArray, FIREBASE_URL, $http)
            $scope.deletePlayer = function(key) {
                playersInfo.$remove(key);
            }; // deleteMeeting
+           
+           
+           
+           
+           
+           
+           
+           
+           
+           $scope.addPow = function() {
+                powInfo.$add({
+                   name: $scope.powName,
+                   position: $scope.powPosition,
+                   comment: $scope.powComment
+                }).then(function(){
+                    $scope.powName='';
+                    $scope.powPosition='';
+                    $scope.powComment='';
+                });  
+           };
+           
+           
            
            
            
