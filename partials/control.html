@@ -1,16 +1,72 @@
 <div class="container-fluid">
 <div class="row">
-<div class="col-lg-8 col-md-offset-2">
-<h3>MadBar United Menu</h3>
-<br>
-<p>Using this menu the user will be able to make any changes to the various pages within the
-         madbar united website. Some of the changes will impact the database for example adding and removing 
-         players and adding new headlines.</p>
-<br>
+<div class="col-lg-8 col-md-offset-2 innerDiv">
+<h2>MadBar United Menu</h2>
+<h5>Using this menu the user will be able to make any changes to the various pages within the
+    Madbar United website. Some of the changes will impact the database for example adding and removing 
+    players and adding new headlines.</h5>
         <!-- DISPLAY FORMS ON 1 SIDE AND INFORMATION ON THE OTHER -->  
-<!-- left side info -->
-<div class="col-sm-6">
-<div>
+
+    <!-- players area / add players, remove players -->
+<div class="col-md-6">
+<h5>Add a players</h5>
+<form class=""
+      name="myform"
+      ng-submit="addPlayer()"
+      novalidate>
+    
+<div class="inputwrapper">
+<input type="text" name="playername"
+           placeholder="Player name"
+           ng-model="playername" ng-required="true">
+</div>
+<div class="inputwrapper">
+<input type="text" name="playerposition"
+           placeholder="Player position"
+           ng-model="playerposition" ng-required="true">
+</div>
+<div class="inputwrapper">
+<input type="text" name="playernationality"
+           placeholder="Player nationality"
+           ng-model="playernationality" ng-required="true">
+</div>
+<div class="inputwrapper">
+<input type="text" name="playernumber"
+           placeholder="Player number"
+           ng-model="playernumber" ng-required="true">
+</div>
+<div class="inputwrapper">
+    <input type="text" name="playerstatus"
+           placeholder="Player status"
+           ng-model="playerstatus" ng-required="true">
+</div>
+<br>
+<button type="submit" class="btn btn-lg hvr-pulse" ng-disabled="myform.$invalid">Add Player</button>
+</form>
+</div>
+
+    <!-- display players -->
+<div class="col-md-6">
+<h5>Current Roster</h5>
+<h5></h5>
+<div ng-repeat="(key, player) in players">
+<p>
+{{ player.name }}
+{{ player.position }}
+{{ player.nationality }}
+{{ player.number }}
+{{ player.status }}
+</p>
+</div>
+</div> 
+
+    
+    
+</div><!--col-lg-8 col-md-offset-2-->
+</div><!-- 1st row -->
+</div><!-- 1st container fluid -->
+    
+<!--
 <div class="container-fluid">
 <h4>Add a player</h4>
 <h5>Please enter player information</h5>
@@ -51,6 +107,7 @@
 </div>
                 
 <!-- THIS WILL BE THE HOME NEWS CONTROL SECTION -->
+<!--
 <h4>Add news to the home page</h4>
 <h5>Type your headline title</h5>  
 <form class=""
@@ -66,6 +123,32 @@
 <input type="text" name="headlineContent"
        placeholder="Type headline content"
        ng-model="headlineContent" ng-required="false">
+</div>
+<button type="submit" class="btn btn-lg hvr-pulse" ng-disabled="myform.$invalid">Add Headline</button>
+</form>
+    
+    
+    
+<h4>Add news to the home page</h4>
+<h5>Type your headline title</h5>  
+<form class=""
+      name="myform"
+      ng-submit="addStaff()"
+      novalidate>
+<div class="inputwrapper">
+<input type="text" name="staffName"
+       placeholder="Type your headline name"
+       ng-model="staffName" ng-required="true">
+</div>        
+<div class="inputwrapper">
+<input type="text" name="staffRole"
+       placeholder="Type headline content"
+       ng-model="staffRole" ng-required="false">
+</div>
+<div class="inputwrapper">
+<input type="text" name="staffTenure"
+       placeholder="Type headline content"
+       ng-model="staffTenure" ng-required="false">
 </div>
 <button type="submit" class="btn btn-lg hvr-pulse" ng-disabled="myform.$invalid">Add Headline</button>
 </form>
@@ -104,20 +187,8 @@
     
           
 </div>
-<!-- right side info -->
-          
-<div class="col-sm-6">           
-<h4>MadBar United Players</h4>
-<div class="homeDiv" ng-repeat="(key, player) in players">
-<p>
-{{ player.name }}
-{{ player.position }}
-{{ player.nationality }}
-{{ player.number }}
-{{ player.status }}
-</p>
-</div>
-              
+
+<div>  
 <h4>MadBar United Headlines</h4>
 <h5>Headlines should appear here</h5>
 <div class="homeDiv" ng-repeat="(key, headline) in headlines">
@@ -129,7 +200,7 @@
 </div>
 </div>
     
-    
+<div>    
 <h4>MadBar United Player of the Week</h4>
 <h5>Player should appear here</h5>
 <div class="homeDiv" ng-repeat="(key, pow) in pows">
@@ -140,8 +211,20 @@
 </p>
 </div>
 </div>
-   
     
+<div>
+<h4>MadBar United Player of the Week</h4>
+<h5>Player should appear here</h5>
+<div class="homeDiv" ng-repeat="(key, staff) in staffs">
+<p>
+{{ staff.name }}
+{{ staff.role }}
+{{ staff.tenure }}
+</p>
+</div>
+</div>
+   
+<div>  
 <h4>MadBar United Images</h4>
 <h5>Images should appear here</h5>
 <div class="homeDiv" ng-repeat="(key, image) in images">
@@ -151,8 +234,10 @@
 </div>
 </div>
     
- 
+</div>
 </div>
 </div><!--col-lg-8 col-md-offset-2-->
+<!--
 </div><!-- 1st row -->
+    <!--
 </div><!-- 1st container fluid -->
