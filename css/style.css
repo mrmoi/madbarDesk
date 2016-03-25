@@ -307,6 +307,28 @@ main {
 
 
 
+/* ----------------------------- FORMS ---------------------------------------------*/
+
+form {
+    margin: 0 auto;
+    padding: 5px 5px 5px 5px;
+}
+form div {
+    
+}
+form label {
+    text-align: right;
+}
+form input {
+    min-width: 200px;
+    margin-bottom: 15px 15px 15px 0px;
+}
+
+
+
+
+/* ----------------------------- FORMS END ---------------------------------------------*/
+
 
 
 

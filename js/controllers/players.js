@@ -25,7 +25,7 @@ var staffInfo = $firebaseArray(staffRef);
 $scope.players = playersInfo;
 $scope.headlines = headlineInfo;
 $scope.images = imagesInfo;
-$scope.pow = powInfo;
+$scope.pows = powInfo;
 $scope.staff = staffInfo;
            
            
@@ -61,7 +61,7 @@ $scope.deletePlayer = function(key) {
 playersInfo.$remove(key);
 }; // deleteMeeting
                  
-           
+// ADD HEADLINE FUNCTION           
 $scope.addHeadline = function() {
 headlineInfo.$add({
      name: $scope.headlineName,
@@ -72,7 +72,8 @@ headlineInfo.$add({
      $scope.headlineContent='';    
 });
 };
-    
+
+// ADD PLAYER OF THE WEEK FUNCTION
 $scope.addPow = function() {
 powInfo.$add({
    name: $scope.powName,
@@ -113,19 +114,22 @@ $scope.addStaff = function() {
 }); // on Auth
     
 /* display data in non logged in areas */
+    
 var playersRef = new Firebase(FIREBASE_URL + '/players');
 var headlineRef = new Firebase(FIREBASE_URL + '/headlines');
 var powRef = new Firebase(FIREBASE_URL + '/pow');
 
-/*
+
 var playersInfo = $firebaseArray(playersRef);
 var headlineInfo = $firebaseArray(headlineRef);
 var powInfo = $firebaseArray(powRef);
 
 $scope.players = playersInfo;
 $scope.headlines = headlineInfo;
-$scope.pow = powInfo;
+$scope.pows = powInfo;
 
+    
+/*    
 playersInfo.$loaded().then(function(data) {
 $rootScope.howManyPlayers = playersInfo.length;
 

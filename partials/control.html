@@ -5,42 +5,42 @@
 <h5>Using this menu the user will be able to make any changes to the various pages within the
     Madbar United website. Some of the changes will impact the database for example adding and removing 
     players and adding new headlines.</h5>
-        <!-- DISPLAY FORMS ON 1 SIDE AND INFORMATION ON THE OTHER -->  
+<!-- DISPLAY FORMS ON 1 SIDE AND INFORMATION ON THE OTHER -->  
 
-    <!-- players area / add players, remove players -->
+<!-- players area / add players, remove players -->
 <div class="col-md-6">
 <h5>Add a players</h5>
-<form class=""
+<form class="theforms"
       name="myform"
       ng-submit="addPlayer()"
       novalidate>
     
 <div class="inputwrapper">
-<input type="text" name="playername"
-           placeholder="Player name"
-           ng-model="playername" ng-required="true">
+<label class="control-label pull-left" for="name">Name</label>
+<input type="text" name="playername" ng-model="playername" ng-required="true">
 </div>
+    
 <div class="inputwrapper">
-<input type="text" name="playerposition"
-           placeholder="Player position"
-           ng-model="playerposition" ng-required="true">
+<label class="control-label pull-left" for="position">Position</label>
+<input type="text" name="playerposition" ng-model="playerposition" ng-required="true">
 </div>
+    
 <div class="inputwrapper">
-<input type="text" name="playernationality"
-           placeholder="Player nationality"
-           ng-model="playernationality" ng-required="true">
+<label class="control-label pull-left" for="nationality">Nationality</label>
+<input type="text" name="playernationality" ng-model="playernationality" ng-required="true">
 </div>
+    
 <div class="inputwrapper">
-<input type="text" name="playernumber"
-           placeholder="Player number"
-           ng-model="playernumber" ng-required="true">
+<label class="control-label pull-left" for="number">Number</label>
+<input type="text" name="playernumber" ng-model="playernumber" ng-required="true">
 </div>
+    
 <div class="inputwrapper">
-    <input type="text" name="playerstatus"
-           placeholder="Player status"
-           ng-model="playerstatus" ng-required="true">
+<label class="control-label pull-left" for="status">Status</label>
+<input type="text" name="playerstatus" ng-model="playerstatus" ng-required="true">
 </div>
-<br>
+    
+
 <button type="submit" class="btn btn-lg hvr-pulse" ng-disabled="myform.$invalid">Add Player</button>
 </form>
 </div>
